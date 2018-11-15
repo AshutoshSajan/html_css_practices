@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+  */
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+  	margin: 0;
+  	padding: 0;
+  	border: 0;
+  	font-size: 100%;
+  	font: inherit;
+  	vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+  	display: block;
+  }
+  body {
+  	line-height: 1;
+  }
+  ol, ul {
+  	list-style: none;
+  }
+  blockquote, q {
+  	quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+  	content: '';
+  	content: none;
+  }
+  table {
+  	border-collapse: collapse;
+  	border-spacing: 0;
+  }
+
+  /* Main CSS */
+
+
+  body {
+  	background-color: black;
+  }
+  main {
+  	padding-top: 20px;
+  	height: 800px;
+  	width: 900px;
+  	background: white;
+  	margin: 0 auto;
+  }
+
+
+  /*float image left  */
+
+
+  .float {
+  	height: 200px;
+  	width: 200px;
+  	float: right;
+  }
+
+
+  /*header section*/
+
+
+  .head {
+  	height: 80px;
+  	width: 900px; 
+  	margin: 0 auto;
+  }
+  .header {
+  	margin-top: 10px;
+  	padding-top: 10px;
+  	padding-bottom: 0px;
+  	background-color: #212F3D;
+  	height: 180px;
+  	width: 900px;
+  }
+  .head1 {
+  	font-size: 35px;
+  	vertical-align: middle;
+  	margin-left: 10px;
+  	color: white;
+  	display: inline-block;
+  }
+  .head2 {
+  	font-size: 50px;
+  	display: inline-block;
+  	vertical-align: middle;
+  	color: orange;				;
+  }
+
+
+  /* header navigation links*/
+
+
+
+  .links {
+  	align-content: center;
+  	width: 900px;
+  	background-color: gray;
+  }
+
+  .main-nav-links{
+  	display: inline-block;
+  	padding-top: 10px;
+  	padding-left: 10px;
+  	border-right: 1px solid black;
+  	padding-bottom: 10px;
+  }
+  a {
+  	padding-top: 20px;
+  	font-size: 20px;
+  	color: white;
+  	margin-right: 15px;
+  	margin-left: 5px;
+  	text-decoration: none;
+  }
+  nav {
+  	margin-left: 0 auto;
+  	display: inline-block;
+  	border-right: 1px solid black;
+  }
+
+  /* body section images float left*/
+
+
+  .section {
+  	padding-top: 20px;
+  } 
+  .float { 
+  	margin-left: 20px;
+  	float: left;
+  	height: 200px;
+  	width: 200px;
+  }
+  .h2 {
+  	margin-left: 240px;
+  	font-size: 30px;
+  	padding-bottom: 10px;
+  }
+
+  /*sections and links*/
+
+
+  .read {
+  	font-weight: bold;
+  	color: orange;
+  	border: none;
+  	margin-left: 20px;
+  }
+  .sec {
+  	height: 220px;
+  	width: 900px;
+  }
+  hr {
+  	width: 860px;
+  }
+  .section2 {
+  	padding-top: 20px;
+  }
+  .section3 {
+  	padding-top: 20px;
+  }
+
+  /*paragraph margin padding*/
+
+
+  p { 
+  	margin-right: 40px;
+  	margin-left: 240px;
+  	text-align: left;
+  	padding-bottom: 20px;
+  }
+
