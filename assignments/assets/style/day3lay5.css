@@ -1,0 +1,137 @@
+/*   css  */
+.page {
+	background-color: gray;
+	height: 800px;
+	width: 1300px;
+	margin-top: 100px;
+	margin-left: 100px;
+	align-content: center;
+	padding-top: 30px;
+}
+.h1 {
+	text-align: center;
+	font-size: 70px;
+}
+.box1 {
+	background-color: lightcoral;
+	height: 400px;
+	width: 400px;
+	margin-left: 400px;
+	margin-top: 50px;
+	margin-bottom: 00px;
+	align-content: center;
+	padding-top: 3px;
+	padding-right: 60px;
+	padding-bottom: 90px;
+	padding-left: 2px;
+}
+.box2 {
+	background-color: black;
+	height: 380px;
+	width: 380px;
+	margin: 20px;
+	padding-top: 10px;
+	padding-right: 40px;
+	padding-bottom: 60px;
+}
+.box3 {
+	background-color: #bada55;
+	height: 360px;
+	width: 360px;
+	margin: 20px 0px 0px 20px;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 25px;
+}
+.box4 {
+	background-color: aqua;
+	height: 340px;
+	width: 340px;
+	margin: 20px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+
+.color {
+	display: inline-block;
+	background-color: ;
+	height: 100px;
+	width: 1300px;
+	margin-right: 50px 50px 50px 60px;
+	align-content: center;
+}
+.brick1 {
+	background-color: ;
+	height: 100px;
+	width: 400px;
+	font-size: 25px;
+	padding-right: 50px;
+	padding-left: 20px;
+	
+}
+.brick2 {
+	background-color:;
+	height: 400px;
+	width: 800px;
+	font-size: 25px;
+	padding-right: 50px;
+	padding-left: 20px;
+}
+.brick3 {
+	background-color: ;
+	height: 200px;
+	width: 400px;
+	font-size: 25px;
+	padding-right: 50px;
+	padding-left: 20px;
+}
+.brick4 {
+	background-color:;
+	height: 200px;
+	width: 400px;
+	font-size: 25px;
+	padding-right:50px;
+	padding-left: 20px;
+}
+.dot1 {
+	display: inline-block;
+	background-color: red;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	margin-top: 40px;
+	margin-left: 300px;
+}
+.dot1 {
+	display: inline-block;
+	background-color: lightcoral;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	font-size: 25px;
+}
+.dot2 {
+	display: inline-block;
+	background-color: red;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	font-size: 25px;
+}
+.dot3 {
+	display: inline-block;
+	background-color: #bada55;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	font-size: 25px;
+}
+.dot4 {
+	display: inline-block;
+	background-color: aqua;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	font-size: 25px;
+}

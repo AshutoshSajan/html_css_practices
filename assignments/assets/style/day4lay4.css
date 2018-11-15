@@ -1,0 +1,28 @@
+.page {
+	margin: 0 auto;
+	height: 900px;
+	width: 800px;
+	background-color: white;
+}
+.para1 {
+	margin-left: 20px;
+	float: left;
+	margin: 0 auto;
+	display: inline-block;
+	height: 600px;
+	width: 400px;
+	background-color: pink;
+}
+.para2 {
+	float: left;
+	margin: 0 auto;
+	display: inline-block;
+	display: inline-block;
+	height: 900px;
+	width: 400px;
+	background-color: skyblue;
+}
+p {
+	margin: 10px;
+	font-size:
+}

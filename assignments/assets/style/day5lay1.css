@@ -1,0 +1,31 @@
+.page {
+	margin: 0 auto;
+	height: 900px;
+	width: 1000px;
+	background-color: #17202A;
+}
+.text {
+	padding-top: 20px;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 20px;
+}
+.p1 {
+	margin-top: 0px;
+	float: left;
+	color: red;
+}
+.p2 {
+	margin-top: 0px;
+	float: right;
+	color: white;
+}
+h1 {
+	margin-top: 50px;
+	color: white;
+	font-size: 40px;
+}
+p {
+	clear: both;
+	color: white;
+}

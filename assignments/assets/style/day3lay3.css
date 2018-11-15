@@ -1,0 +1,98 @@
+.container {
+	background-color: gray;
+	height: 840px;
+	width: 1300px;
+	margin: 100px;
+	padding-left: 140px ;
+}	
+.box1 {
+	display: inline-block;
+	background-color: #E74C3C;
+	height: 200px;
+	width: 500px;
+	margin: 20px;
+	padding: 40px 0px 0px 40px;
+	color: white;
+	font-size: 25px;
+}
+.box2 {
+	display: inline-block;
+	background-color: #16A085;
+	height: 200px;
+	width: 200px;
+	margin: 20px;
+	padding: 40px 0px 0px 40px;
+	color: white;
+	font-size: 25px;
+
+}
+.box3 {
+	display: inline-block;
+	background-color: #A569BD;
+	height: 200px;
+	width: 200px;
+	margin: 20px;
+	padding: 40px 0px 0px 40px;
+	color: white;
+	font-size: 25px;
+}
+.box4 {
+	display: inline-block;
+	background-color: #5DADE2;
+	height: 200px;
+	width: 200px;
+	margin: 20px;
+	padding: 40px 0px 0px 40px;
+	color: white;
+	font-size: 25px;
+	
+}
+.box5 {
+	display: inline-block;
+	background-color: #52BE80;
+	height: 200px;
+	width: 500px;
+	margin: 20px;
+	padding: 40px 0px 0px 40px;
+	color: white;
+	font-size: 25px;
+}
+.box6 {
+	display: inline-block;
+	background-color: #82E0AA;
+	height: 200px;
+	width: 200px;
+	margin: 20px;
+	padding: 40px 0px 0px 40px;
+	color: white;
+	font-size: 25px;
+}
+.box7 {
+	display: inline-block;
+	background-color: #FFFF00;
+	height: 200px;
+	width: 200px;
+	margin: 20px;
+	padding: 40px 0px 0px 40px;
+	color: white;
+	font-size: 25px;
+}.box8 {
+	display: inline-block;
+	background-color: #FF8A65;
+	height: 200px;
+	width: 200px;
+	margin: 20px;
+	padding: 40px 0px 0px 40px;
+	color: white;
+	font-size: 25px;
+}
+.box9 {
+	display: inline-block;
+	background-color: #C0392B;
+	height: 200px;
+	width: 500px;
+	margin: 20px;
+	padding: 40px 0px 0px 40px;
+	color: white;
+	font-size: 25px;
+}

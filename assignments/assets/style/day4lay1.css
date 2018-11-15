@@ -1,0 +1,233 @@
+
+
+/* Main CSS elements*/
+
+img {
+	height: 100px;
+	width:100px;
+}
+hr {
+	width: 1500px;
+	height: 1px;
+	background-color: black;
+}
+.page {
+	margin: 20px;
+	height: 3650px;
+	width: 1600px;
+}
+
+.sections {
+	height: 200px;
+}
+
+
+/* Section 1 - No floats */
+
+.img2 {
+	float: left;
+}
+
+
+/* Section 3 - Float right */
+
+
+.img3 {
+	float: right;
+}
+.img4 {
+	float: left;
+}
+.img5 {
+	float: left;
+	margin-left: 5px;
+}
+.p1 {
+	margin-left: 0px;
+	margin-top: 0px;
+	display: inline;
+	text-align: left;
+}
+.p2 {
+	margin: o auto;
+	text-align: left;
+}
+.p4 {
+	display: inline;
+}
+.img6 {
+	float: right;
+}
+.img7 {
+	margin-right: 5px;
+	float: right;
+}
+.cont1 {
+	height: 140px;
+	width: 1600px;
+	background-color: orange;
+	border:4px solid red;
+}
+.box1 {
+	height: 100px;
+	width: 1560px;
+	background-color: pink;
+	margin-top:20px;
+	margin-left: 20px;
+	align-content: center;
+}
+.box2 {
+	height: 40px;
+	width: 1600px;
+	border: 4px solid red;
+	background-color: orange;
+}
+.box2img {
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.box3 {
+	height: 40px;
+	width: 1600px;
+	border: 4px solid red;
+	background-color: orange;
+}
+.flag1 {
+	height: 80px;
+	width: 1560px;
+	background-color: skyblue;
+	margin-top:20px;
+	margin-left: 20px;
+	align-content: center;
+}
+.flag2 {
+	height: 80px;
+	width: 1560px;
+	background-color: skyblue;
+	margin-top:20px;
+	margin-left: 20px;
+	align-content: center;
+}
+.flag3 {
+	height: 80px;
+	width: 1560px;
+	background-color: skyblue;
+	margin-top:20px;
+	margin-left: 20px;
+	align-content: center;
+}
+.flag4 {
+	height: 80px;
+	width: 1560px;
+	background-color: skyblue;
+	margin-top:20px;
+	margin-left: 20px;
+	align-content: center;
+}
+.box4 {
+	height: 40px;
+	width: 1600px;
+	border: 4px solid red;
+	background-color: orange;
+}
+.b1 {
+	height: 100px;
+	width: 100px;
+	background-color: skyblue;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.box5 {
+	height: 40px;
+	width: 1600px;
+	border: 4px solid red;
+	background-color: orange;
+}
+.clear {
+	/*height: 100px;
+	width: 100px;
+	background-color: skyblue;
+	margin-left: 20px;
+	margin-top: 260px;*/
+	clear: left;
+}
+.box6 {
+	height: 260px;
+	width: 1600px;
+	border: 4px solid red;
+	background-color: orange;
+}
+.inrbox {
+	height: 220px;
+	width: 1560px;
+	background-color: pink;
+	margin-top:20px;
+	margin-left: 20px;
+}
+.b3 {
+	height: 100px;
+	width: 100px;
+	background-color: skyblue;
+	float: left;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 10px;
+}
+.sec1{
+	height: 200px;
+}
+.sec2{
+	height: 200px;
+}
+.sec3{
+	height: 200px;
+}
+.sec4{
+	display:inline-block;
+	height: 200px;
+}
+.sec5{
+	height: 200px;
+}
+.sec6{
+	height: 200px;
+}
+.sec7{
+	height: 200px;
+}
+.sec8{
+	height: 450px;
+}
+.sec9{
+	height: 300px;
+}
+.sec10{
+	height: 400px;
+}
+.sec11{
+	height: 400px;
+}
+.sec12{
+	height: 400px;
+}
+.fix {
+	margin-top: 10px;
+	clear: right;
+}
+.cf {
+	clear: both;
+}
+.clearfix:before,
+.Clearfix:after {
+  content: "";
+  display: table;
+}
+.Clearfix:after {
+  clear: both;
+}
+.Clearfix {
+  clear: both;
+  *zoom: 1;
+}

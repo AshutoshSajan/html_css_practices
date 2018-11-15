@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>day4lay3</title>
+	<link rel="stylesheet" type="text/css" href="/home/macbook
+/Documents/learn/html_css_practices/assignments/assets/style/day4lay3.css">
+</head>
+<body>
+	<main class="gray">
+		<section class="page">
+			<header>
+				<h1>Side-By-Side Positioning Demo<h1>
+			</header>
+			<section class="sec1">
+				<div class="box1"> 
+					<p class="p">these two divs are positioned next to one another using <span>display: inline-block</span>
+					</p>
+				</div>
+				<div class="box2">
+					<p class="p">Notice the space between them. It occurs because of my carriage return in the HTML which I've used to keep the code organised. I've used a reset to ensure no elements should have any default margins or padding. (I did add a bottom margin to make it easier to read.) This space is actually a space character rendered just as it would be between two inline elements.
+					</p>
+				 </div>
+			</section>
+			<section class="sec2">
+				<div class="box3">
+					<p class="p">These two are positioned using <span>Float:left;</span></p>
+				</div>
+				<div class="box4">
+					<p class="p">
+						You can see that, evev though the elements are spaced in the code, the space is not actually rendered on the page. This may not be a huge deal in these first examples, but...
+					</p>
+				</div>		
+			</section>
+			<section class="sec3">
+				<div class="box5">
+					<p class="p">
+						What if I want my side-by-side elements to take up the full width of the parent element? I can set the width of each to 50%,right?
+					</p>
+				</div>
+				<div class="box6">
+					<p class="p">
+						Wrong! Because,together, the two inline block elements will add up to 100% of the available width, but that doesn't account for the space between.
+					</p>
+				</div>
+			</section>
+			<section class="sec4">
+				<div class="box7">
+					<p class="p">
+						If i do the same thing with floated elements...
+					</p>
+				</div>
+				<div class="box8">
+					<p class="p">
+						The two elpadding-top: 10px;ements are side-by-side just as i intended and fill the entire width of the parent (which,in the case, is the same as the width of the viewport.)
+					</p>
+				</div>
+			</section>
+		</section>
+	</main>
+</body>
+</html>

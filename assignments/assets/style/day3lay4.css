@@ -1,0 +1,40 @@
+/*   css   */
+.page {
+	background-color: lightgray;
+	height: 900px;
+	width: 1600px;
+	margin: 20px;
+
+}
+.box {
+	display: block;
+	background-color: purple;
+	height: 630px;
+	width: 500px;
+	margin: 0px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+.box1 {
+	display: block;
+	height: 530px;
+	width: 400;
+	background-color: red;
+	color: white;
+	font-size: 20px;
+	border-top: 20px solid blue;
+	border-right: 20px solid gray;
+	border-bottom: 20px solid yellow;
+	border-left: 20px solid green;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	text-align: left;
+}

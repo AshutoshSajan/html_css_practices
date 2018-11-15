@@ -1,0 +1,120 @@
+h5 {
+	text-align: center;
+	color: black;
+}
+.container1 {
+	background:;
+	height:150px;
+	width: 300px
+	padding:0px ;
+  	margin:0px 500px 20px 500px;
+	border: 2px solid black;
+}
+.box1 {
+  	display:inline-block;
+    text-align:center;
+  	background:gray;
+  	height:100px;
+  	width:150px;
+  	padding:  ;
+  	margin: 20px 40px 30px 40px;
+}
+.box2 {
+  	display:inline-block;
+    text-align:center;
+  	background:gray;
+  	height:100px;
+  	width:150px;
+  	padding:  ;
+  	margin: 20px 40px 30px 20px;
+}
+.box3 {
+  	display:inline-block;
+    text-align:center;
+  	background:gray;
+  	height:100px;
+  	width:150px;
+  	padding:  ;
+  	margin: 20px 40px 30px 20px;
+  	
+  }
+  .container2 {
+	background:;
+	height:350px;
+	width: 300px
+	padding:0px ;
+  	margin:0px 500px 20px 500px;
+	border: 2px solid black;
+
+}
+.box4 {
+  	display:inline-block;
+    text-align:center;
+  	background:gray;
+  	height:100px;
+  	width:150px;
+  	padding:  ;
+  	margin: 20px 40px 30px 40px;
+  	border: 10px solid black;
+}
+.box5 {
+  	display:inline-block;
+    text-align:center;
+  	background:gray;
+  	height:100px;
+  	width:150px;
+  	padding:  ;
+  	margin: 20px 40px 30px 20px;
+  	border: 10px solid black;
+}
+.box6 {
+  	display: block;
+    text-align:center;
+  	background:gray;
+  	height:100px;
+  	width:150px;
+  	padding:  ;
+  	margin: 20px 20px 0px 40px;
+  	border: 10px solid black;
+  }
+  .container3 {
+
+  	background:;
+	height:150px;
+	width: 300px
+	padding:0px ;
+  	margin:0px 500px 20px 500px;
+	border: 2px solid black;
+
+  }
+
+  .box7 {
+  	display:inline-block;
+    text-align:center;
+  	background:gray;
+  	height:80px;
+  	width:120px;
+  	padding:  ;
+  	margin: 20px 40px 30px 40px;
+  	border: 10px solid black;
+}
+.box8 {
+  	display:inline-block;
+    text-align:center;
+  	background:gray;
+  	height:80px;
+  	width:120px;
+  	padding:  ;
+  	margin: 20px 40px 30px 20px;
+  	border: 10px solid black;
+}
+.box9 {
+  	display:inline-block;
+    text-align:center;
+  	background:gray;
+  	height:80px;
+  	width:120px;
+  	padding:  ;
+  	margin: 20px 40px 30px 20px;
+  	border: 10px solid black;
+  }
