@@ -1,7 +1,61 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+    /*head of the body*/
+
 h1{
   margin: 20px;
+  font-size: 30px;
+  font-weight: bold;
 }
-.box1 {
+.box {
   background: #A52A2A;
   height: 100px;
   width: 140px;
@@ -9,68 +63,71 @@ h1{
   padding: 20px;
   border: 5px solod black;
 }
-.box2 {
+
+    /*midle inline blocks*/
+
+.midle {
   display:inline-block;
   background: #A52A2A;
-  height: 100px;
-  width: 140px;
-  margin:20px;
-  padding: 20px;
+}
+
+    /*bottom inline blocks*/
+
+
+.bottom {
+  display:inline-block;
+  background: #A52A2A;
+  
+}
+
+      /*different border styles*/
+
+
+.top {
+  border: 5px solid black;
+}
+.box1 {
   border: 5px double;
 }
-.box3 {
-  display:inline-block;
-  background: #A52A2A;
-  height: 100px;
-  width: 140px;
-  margin:20px;
-  padding: 20px;
+.box2 {
   border: 5px dashed;
 }
-.box4 {
-  display:inline-block;
-  background: #A52A2A;
-  height: 100px;
-  width: 140px;
-  margin:20px;
+.dotted {
   border: 5px dotted;
-  padding: 20px;
 }
-.box5 {
-  display:inline-block;
-  background: #A52A2A;
-  height: 100px;
-  width: 140px;
-  margin:20px;
-  padding: 20px;
-  border: none;
-}
+
+
+    /*big content box section 2*/
+
+
 .ex2 {
   background: #F1948A;
-  height: 100px;
-  width: 300px;
-  padding: 20px 20px 0px 20px;
-
+  padding: 60px;
+  width: 30%;
+  margin-left: 5px;
 }
 .content1 {
   text-align: center;
   background: limegreen;
   color: blue;
   border: 10px solid red;
-  padding: 0px;
-  margin: 20px 20px 20px 20px;
+  padding: 5px;
 }
+
+      /*small content box*/
+
+      
 .ex3 {
   background: #F1948A;
-  height: 100px;
-  width: 200px;
-  padding: 20px 20px 0px 20px;
-
+  width: 10%;
+  padding: 40px;
+  margin-left: 5px;
+  margin-bottom: 10px;
 }
 .content2 {
   text-align: center;
   background: limegreen;
   color: blue;
   border: 10px solid red;
-  margin: 20px;
+  padding: 5px;
 }
