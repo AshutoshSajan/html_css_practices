@@ -60,17 +60,15 @@
 	width: 100%;
 	background-color: silver;
 }
+
 h1 {
-	/*padding: 10px;*/
+	padding: 10px 0;
 	margin-left: 20px;
 	font-size: 40px;
 	font-weight: bold;
 }
-/*.rightbox {
 
-}*/
-
-		/*section one*/
+	/*section one*/
 
 
 .section1 {
@@ -88,6 +86,7 @@ h1 {
 	border-radius: 5px;
 	border: 0.5px solid #D35400;
 }
+
 span {
 	background-color: silver;
 }
@@ -95,6 +94,7 @@ span {
 .box2 {
 	margin-left: 0px;
 }
+
 .p {
 	margin:10px 20px 20px 10px;
 }
@@ -174,7 +174,4 @@ span {
 	width: 50%;
 	background-color: lightgreen;
 
-}
-.box7 {
-	/*margin-left: 20px;*/
 }

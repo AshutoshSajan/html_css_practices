@@ -1,3 +1,6 @@
+/*css reset*/
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
   License: none (public domain)
   */
@@ -52,6 +55,10 @@
 	/* Main CSS elements*/
 
 
+*,*:before, *:after{
+	box-sizing: border-box;
+}
+
 }
 .page {
 	margin:0 auto;
@@ -69,11 +76,11 @@ hr {
 h1 {
 	font-size: 30px;
 	font-weight: bold;
+	padding: 10px 0 20px 0;
 }
 
 .sections {
-	margin: 20px;
-	/*height: 200px;*/
+	margin: 40px 20px;
 	width: 1600px;
 }
 
@@ -90,6 +97,7 @@ h1 {
 
 .img3 {
 	float: right;
+	padding-bottom: 10px;
 }
 .img4 {
 	float: left;
@@ -97,16 +105,14 @@ h1 {
 .img5 {
 	float: left;
 	margin-left: 5px;
+	padding-right: 10px;
 }
 .p1 {
-	margin-left: 10px;
-	margin-top: 0px;
+	padding: 20px 10px;
 	display: inline;
-	text-align: left;
 }
 .p2 {
 	margin: 0 120px;
-	text-align: left;
 }
 .img6 {
 	float: right;
@@ -129,23 +135,24 @@ h1 {
 	margin-left: 20px;
 	align-content: center;
 }
-.box2 {
-	height: 40px;
-	width: 1600px;
-	border: 4px solid red;
-	background-color: orange;
-}
+
 .box2img {
 	float: left;
 	margin-left: 20px;
 	margin-top: 20px;
 }
-.box3 {
+
+.paddingbox {
+	margin-bottom: 100px;
+}
+
+.smallbox {
 	height: 40px;
 	width: 1600px;
 	border: 4px solid red;
 	background-color: orange;
 }
+
 .flag {
 	height: 80px;
 	width: 1560px;
@@ -170,12 +177,7 @@ h1 {
 	float: left;
 	margin-right: 10px;
 }
-.box5 {
-	height: 40px;
-	width: 1600px;
-	border: 4px solid red;
-	background-color: orange;
-}
+
 .clear {
 	clear: left;
 }
