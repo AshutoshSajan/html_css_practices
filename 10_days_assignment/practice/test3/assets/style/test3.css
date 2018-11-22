@@ -1,0 +1,180 @@
+/*css reset*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+    /*main css*/
+
+.topsection {
+  width:100%;
+  height: 800px;
+  background-color: #138623; 
+}
+
+.navlinks {
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 60%;
+  background-color: #0A5314;
+}
+
+.links {
+  margin-left: 60px;
+  border-right: 1px solid white;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  padding: 20px 50px 20px 0;
+}
+
+.noborder {
+  border-right: none;
+}
+
+.FORTHRIGHT {
+  width: 100%;
+  display: inline-block;
+  font-size: 50px;
+  color: white;
+  margin-top: 200px;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+  font-family: serif;
+}
+
+.toppage {
+  width: 60%;
+  background-color: silver;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+.leftpage {
+  width: 60%;
+  background-color: tomato;
+}
+
+.page {
+  display: inline-block;
+  vertical-align: top;
+}
+h1 {
+  font-size: 30px;
+  padding: 80px 20px 30px 50px;
+}
+.floatleft {
+  float: left;
+  padding: 10px 0 10px 40px;
+}
+
+.floatright {
+  float: right;
+   padding: 10px 40px 10px 0px;
+}
+
+.toppagelinks{
+  color: white;
+  text-decoration: none;
+}
+
+.para {
+  padding: 10px 40px;
+  clear: both;
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+button {
+  margin: 50px 0px 30px 50px; 
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #10D5E5;
+}
+.rightpage {
+  background-color: tomato;
+  width: 40%;
+  height: 100%;
+}
+
+.search {
+  display: inline-block;
+  text-align: center;
+  font-size: 22px;
+  font-family: sans-serif;
+  margin: 40px 0 20px 10px;
+  color: black;
+  padding-top: 30px;
+}
+
+input {
+  margin-left: 10px;
+  height: 30px;
+  width: 300px;
+  border-radius: 10px;
+}
+.pararight {
+  padding: 0 20px 0 0;
+  margin: 10px 10px 10px 10px;
+  font-family: sans-serif;
+}
+.middlesection {
+  width:100%;
+  height: 1400px;
+  background-color: #10D5E5; 
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  background-color: #0F141A;
+  width: 100%;
+  padding: 40px 0 150px 0;
+}
