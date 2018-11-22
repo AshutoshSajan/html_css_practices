@@ -57,7 +57,6 @@ table {
 	margin: 20px auto;
 	width: 1600px;
 	background-image:url("https://www.gameofwarapp.com/uploads/home/slider-1.jpg");
-
 }
 
 	/*header*/
@@ -107,7 +106,7 @@ table {
 	font-weight: bold;
 	padding: 200px 0;
 	width: 1400px;
-	background-image:url("http://assets.vg247.com/current//2015/09/ni-oh.jpg"); ;
+	background-image: linear-gradient(#F35A3C50,#78B81550),url("http://assets.vg247.com/current//2015/09/ni-oh.jpg"); ;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
