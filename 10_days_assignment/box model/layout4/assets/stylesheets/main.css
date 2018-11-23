@@ -1,0 +1,184 @@
+/*css reset*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*main css*/
+
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+/*header*/
+
+body {
+  margin: 0 auto;
+  width: 80%;
+  padding: 0px 80px;
+  font-family: sans-serif;
+  color: #536060;
+}
+.head{
+  display: inline-block;
+  width: 100%; 
+  background-color: white;
+  z-index: 100;
+  padding: 20px 0;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 40px;
+  color: #324040;
+}
+h2 {
+  color: #1A2020;
+  font-size: 30px;
+}
+h3 {
+  font-size: 20px;
+}
+h5 {
+  padding: 80px 0;
+}
+
+hr {
+  width: 70%;
+  z-index: 100;
+  top: 21%;
+  left: 15%;
+}
+
+.fixed {
+  z-index: 10;
+  position: fixed;
+}
+
+/*main section*/
+
+.clearfix{
+  padding: 20px 0;
+}
+
+/*clearfix*/
+
+
+.clearfix:before,.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom:1;
+}
+
+/*unorderd list*/
+.navs {
+  padding: 10px 0 15px 10px;
+}
+
+ul {
+  margin-left: 20px;
+  list-style: circle;
+}
+
+.links {
+  text-transform: capitalize;
+  list-style: circle;
+  list-style-type: circle;
+  display: inline-block;
+  padding: 10px 0;
+  color: skyblue;
+}
+
+.floats {
+  float: left;
+}
+
+/*left navigation bar*/
+
+aside{
+  background-color: #EAEEEE;
+}
+.leftnav {
+  width: 20%;
+  height: 550px;
+  left: 15%;
+  top: 26%;
+ }
+
+/*right bar*/
+
+.rightbar {
+  margin: 18% 10% 0 40%;
+  width: 60%;
+
+}
+.headart {
+  padding: 10px 0 20px 0;
+}
+
+p {
+  line-height: 1.2;
+  padding: 10px 0;
+}
+
+/*footer*/
+
+footer {
+  background-color: #353B3B;
+  padding: 10px 0 20px 10px;
+  color: white;
+  width: 80%;
+  bottom: 0;
+  left: 10;
+}
