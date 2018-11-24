@@ -151,7 +151,7 @@ aside{
 }
 .leftnav {
   width: 20%;
-  height: 550px;
+  height: 600px;
   left: 15%;
   top: 26%;
  }
@@ -178,7 +178,7 @@ footer {
   background-color: #353B3B;
   padding: 10px 0 20px 10px;
   color: white;
-  width: 80%;
+  width: 70%;
   bottom: 0;
   left: 10;
 }
