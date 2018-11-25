@@ -68,8 +68,8 @@ body {
 
 h1 {
 	letter-spacing: 2px;
-	color: silver;
-	margin:0 180px 0 150px;
+	color: #EFF3F3;
+	margin:0 200px 0 200px;
 	vertical-align: middle;
 	font-size: 40px;
 	display: inline-block;
@@ -99,19 +99,22 @@ h1 {
 	display: inline-block;
 	text-decoration: none;
 	padding: 10px 10px;
+	margin-left: 60px;
 }
 
-a:hover {
+.links:hover {
 	background-color: green;
 }
 /*middle box section*/
 
 .floats {
 	display: inline-block;
+	border:1px solid #C9CECE;
+	padding: 30px 60px;
 }
 
 .middleicon {
-	margin: 20px 350px;
+	margin: 20px;
 }
 
 
@@ -198,7 +201,7 @@ strong {
 
 .para2 {
 	line-height: 1.4;
-	margin: 40px 100px;
+	margin: 40px 150px;
 	text-align: left;
 	color: silver;
 }
@@ -218,3 +221,8 @@ footer {
 	color: silver;
 	background-color: #2F3333;
 }
+i {
+	padding: 20px 0;
+  color: #384040;
+  font-size: 30px;
+ }
