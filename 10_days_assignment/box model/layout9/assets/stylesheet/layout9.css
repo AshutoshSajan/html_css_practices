@@ -63,7 +63,7 @@ body {
   font-size: 22px;
   line-height: 1.2;
   text-align: center;
-  color: white;
+  color: #DAE1E1;
  }
 
  h2 {
@@ -74,10 +74,15 @@ body {
 
 .topcontainer {
   display: inline-block;
-  padding: 20px 40px;
-  width: 200px;
+  padding: 40px;
+  width: 250px;
   background-color: #38C1C1;
-  border:1px solid white;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  border-top-style: double;
+  border-bottom-style: double;
  }
 
 /*all sections */
@@ -120,11 +125,19 @@ img {
  }
  .img_container_1 {
   vertical-align: bottom;
-  margin: 40px 0 0 0;
+  margin: 60px 0 0 0;
   text-align: center;
  }
 
+ .imgcntnr2 {
+    text-align: center;
+ }
+
+.right{
+  border-right: none;
+}
  .bottombox {
+  border-top: none;
   vertical-align: top;
  }
 
@@ -135,8 +148,8 @@ img {
   margin: 20px auto;
   display: block;
   padding: 10px 20px;
-  background-color: #2E3232;
-  color: white;
+  background-color: #414D4D;
+  color: #D4D9D9;
  }
  .white {
   background-color: white;
@@ -162,6 +175,11 @@ img {
  .inputcontainer {
   width: 100%;
   text-align: center;
+ }
+
+ .middle {
+  border-left: none;
+  border-right: none;
  }
 
  .textinput {
@@ -196,4 +214,12 @@ img {
  a:hover {
   color: orange;
  }
- 
+i {
+  padding: 20px 20px;
+  font-size: 50px;
+  color: skyblue;
+ }
+strong {
+  font-weight: bolder;
+  color: white;
+}
