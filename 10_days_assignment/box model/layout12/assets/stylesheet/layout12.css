@@ -1,0 +1,227 @@
+/*		css reseet		*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*		general css		*/
+
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Questrial', sans-serif;
+}
+
+.header {
+	background-color: #16a085;
+	padding: 40px 0;
+}
+
+.wrapper {
+	padding: 15px 0;
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.primary-color {
+	color: #fff;
+}
+.text-align {
+	text-align: center;
+}
+.center {
+	margin: 0 auto;
+}
+
+.logo {
+	font-size: 60px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.list {
+	display: inline-block;
+}
+.list a {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: none;
+	margin: 0 0 0 20px;
+}
+.btn {
+	padding: 20px 30px;
+	background-color:#16a085;
+	display: inline-block;
+}
+
+.logo i {
+	margin:0 20px 0 50px;
+}
+.navbar {
+	margin-left: 0;
+	width:600px; 
+	padding: 20px;
+	background-color: #1ABC9C;
+}
+
+/*section2*/
+.section2 {
+	background-color: #f3f3f3;
+}
+
+.paraclr strong {
+	color: black;
+	font-weight:bold;
+}
+
+.header1 {
+	font-size: 50px;
+	font-weight: bold;
+	color: #404040;
+	padding: 20px 0;
+}
+.paraclr {
+	line-height: 1.5;
+	color: #00000099;
+}
+.paraclr a {
+	color:#16a085; 
+}
+.paraclr a:hover {
+	text-decoration: none;
+}
+.textbox {
+ display: inline-block;
+}
+.h2 {
+	font-size: 26px;
+	padding: 20px 0;
+	color: black;
+}
+.para2 {
+	width: 280px;
+	margin: 20px 5px;
+}
+.btn {
+	margin-left:25%;
+	text-align: center;
+	background-color: #16a085;
+}
+.clrbox {
+	padding: 50px 0;
+}
+.bluebox {
+	margin: 0 0 40px 10px;
+	display: inline-block;
+	height: 200px;
+	width: 300px;
+	background-color: #16a085; 
+}
+.h3 {
+	display: inline-block;
+}
+.box {
+	display: inline-block;
+}
+.btn2 {
+	margin: 0;
+}
+
+.section3 {
+	background-color: #fff;
+}
+
+.icons {
+	width: 130px;
+	height: 130px;
+	margin: 0 20px;
+	display: inline-block;
+	font-size: 60px;
+	color: white;
+	background-color: #16a085;
+	border-radius: 50%; 
+}
+.icons i {
+	margin: 30px 0 0 0 ;
+}
+.section4 {
+	padding: 80px 0;
+}
+.section4 figure {
+	text-align: center;
+	margin: 30px 0;
+}
+.footericon {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color:#1ABC9C;
+	margin: 40px 5px;
+	color: white; 
+}
+.foot {
+	margin: 5px 0 0 0 ;
+	font-size: 25px;
+	color: white;
+}
+.footer, small, figure {
+	text-align: center;
+}
+.footer {
+	background-color:#16a085;
+	color: #fff;
+	padding: 60px 0;
+}
+.footer a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
