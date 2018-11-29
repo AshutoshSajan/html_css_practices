@@ -54,7 +54,7 @@ table {
 
 
 .page {
-	margin: 20px auto;
+	margin: 0 auto;
 	width: 1600px;
 	background-image:url("https://www.gameofwarapp.com/uploads/home/slider-1.jpg");
 }
@@ -102,7 +102,7 @@ table {
 
 	/*box 4*/
 .big {
-	margin: 40px 100px;
+	margin: 60px 100px;
 	font-weight: bold;
 	padding: 200px 0;
 	width: 1400px;
