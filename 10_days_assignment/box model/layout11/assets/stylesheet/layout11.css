@@ -1,0 +1,298 @@
+/*css reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*header section*/
+
+
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	font-family: 'Open Sans', sans-serif;
+}
+
+main {
+	width: 1300px;
+	background-color: #252C24;
+}
+
+.secondary-color {
+	color: #525356;
+}
+
+.rightsection h1 {
+	font-size: 40px;
+	color: black;
+	font-weight: bold;
+}
+
+
+.parimary-color {
+	color: #989292; 
+}
+
+
+.rightsec {
+	background-color:white;
+	float: right;
+	margin: 0 auto;
+	max-width: 900px;
+	width: 100%;
+	text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	padding: 20px 0;
+}
+.cf {
+	display: inline-block;
+}
+
+.head1 {
+	font-weight: lighter;
+	color: white;
+	text-align: center;
+}
+.head1 a {
+	color: white;
+	font-weight:normal;
+	text-decoration: none;
+}
+.roundimg {
+	margin: 56px auto;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+.diagonalimg {
+	margin: 50px 0 80px 0;
+	width: 800px;
+	text-align: center;
+
+}
+
+.leftnav {
+	/*padding-bottom: 100%;*/
+	width: 400px;
+	float: left;
+	background-color: #252C24;
+}
+
+.navbar{
+	text-align: center;
+	padding: 30px 0;
+}
+.links{
+	border-top: 1px solid #ffffff14;
+	color: white;
+	font-weight: bold;
+	display:block;
+	text-decoration: none;
+	padding: 40px 0px;
+	font-size: 14px;
+}
+
+.blue {
+	background-color: #4383F2; 
+}
+
+.links:hover {
+	background-color: #4383F2;
+}
+
+.main-heading {
+	padding: 40px 0;
+	color: #989292;
+	font-weight: bold;
+}
+
+.head2 {
+	padding: 20px 0;
+	font-size: 22px;
+	font-weight: lighter;
+	color: #989292;
+}
+
+hr {
+	border:0;
+	width: 800px;
+	margin:0 auto;
+	border-top: 1px solid #EBECEE;
+}
+
+
+/*clearfix*/
+
+
+.cf:before,.cf:after {
+	content: "";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	clear: both;
+	*zoom:1;
+}
+
+
+/*right section*/
+
+.datebox {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 20px;
+}
+
+h4 {
+	color: #303030;
+	font-weight: bold;
+}
+
+.month {
+	font-weight: normal;
+	font-size: 22px;
+}
+
+.date {
+	font-size: 30px;
+}
+.rightsection {
+	border-top: 6px solid blue;
+	width: 900px;
+	text-align: center;
+	float: left;
+	background-color: white;
+}
+.rightsection .top-para {
+	margin: 0 50px 60px 50px;
+	line-height: 1.5;
+	font-weight:lighter;
+}
+
+.rightsection .top-para a {
+	color: skyblue;
+}
+.rightsection .top-para a:hover {
+	text-decoration: underline;
+}
+
+.rightsection .top-para strong {
+	font-weight: bold;
+	color: black;
+}
+
+
+
+.right_sec_para {
+	padding: 20px 0 20px 0;
+	margin-left: 20px;
+	width: 500px;
+	text-align: left;
+	line-height: 1.5;
+}
+.rightsection h2 {
+	font-size: 20px;
+} 
+
+.rightsection a {
+	text-decoration:none; 
+}
+
+.rightsection a:hover {
+	text-decoration: underline; 
+}
+
+.rightsection h3 {
+	margin: 0 0 0 20px;
+	text-align: left;
+}
+.borderbox {
+	margin: 0 50px;
+	padding: 20px 0;
+	border-bottom: 1px solid #EBECEE;
+}
+.parabox {
+	vertical-align: middle;
+	display: inline-block;
+	border-left: 1px solid #EBECEE;
+}
+.style {
+	padding: 40px 0;
+}
+.none {
+	border-bottom: none;
+}
+
+/*footer section*/
+
+.footer {
+	font-size: 14px;
+	padding: 60px 0 100px 0;
+}
+.footer p {
+	padding: 20px 0;
+}
+.footer a {
+	text-decoration: none;
+	color: black;
+}
+.footer a:hover {
+	text-decoration: none;
+}
