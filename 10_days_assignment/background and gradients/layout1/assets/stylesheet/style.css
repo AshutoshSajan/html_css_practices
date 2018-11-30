@@ -1,0 +1,320 @@
+/*    css reset     */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*    general css     */
+
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, button, label {
+  color: #fff;
+}
+
+p, li, a {
+  color: #ffffff8c;
+}
+
+h1, h2, h3, h4, p {
+  padding: 20px 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+.padding {
+  padding: 80px 100px 80px 60px;
+}
+
+.margin {
+  margin-left: 60px;
+}
+
+.leftnav {
+  padding: 17% 50px 0 50px;
+  text-align: right;
+  position: fixed;
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  background-color: #312450;
+  vertical-align: middle;
+}
+.right-page {
+  margin-left: 20%;
+  width: 80%;
+}
+
+.hero {
+  padding: 25% 0 25% 60px;
+  background: url("assets/media/Radha-krishna.jpg");
+  background-color: #5e42a6;
+}
+
+.form-section {
+   background-color: #5e42a6;
+}
+
+.img-section {
+  background-color: #312450;
+}
+
+.icon-section {
+  background-color: #b74e91;
+}
+
+.box-container {
+  background-color: #ffffff0d;
+}
+
+.footer {
+  background-color: #493382;
+}
+
+
+.links {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.list li {
+  padding: 30px 0;
+  border-bottom: 3px solid blue;
+  border-image: linear-gradient(to right, #5e42a6, #b74e91) 30;
+}
+
+/*.list li:hover {
+  border-bottom-color: gray;
+}*/
+
+.links:hover {
+  color: white;
+}
+
+
+/*    right page    */
+
+
+.hero h1 {
+  padding: 20px 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 20px 0;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #ffffff26;
+  border-radius: 40px;
+  padding: 15px 35px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffffff26;
+
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.text-box h2, .icon-section h2, .form-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+
+/*image section*/
+
+
+.img-box {
+  line-height: 0;
+}
+
+
+.one, .two, .three {
+  width: 100%;
+}
+
+.one {
+  background-color: #35368a;
+
+}
+.two {
+  background-color: #38398a;
+}
+
+.three {
+  background-color: #3d3e92;
+}
+
+.text-box {
+  width: 800px;
+  padding-left: 40px;
+}
+
+.icon-section h3, .head {
+  font-size: 22px;
+}
+.container {
+  vertical-align: middle;
+  width: 50%;
+  padding: 40px 0;
+}
+.big-container {
+  margin: 20px 0;
+  background-color: #ffffff15;
+  border-radius: 5px;
+  border: 1px solid #ffffff19;
+}
+.icon-bg {
+  background-color: white;
+  height: 50px;
+  width:50px;
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: top;
+  margin: 20px 0 0 40px;
+}
+.box3 {
+  border-top: 1px solid #ffffff19;
+  border-bottom: 1px solid #ffffff19; 
+}
+.box1, .box5, .middle{
+  border-right: 1px solid #ffffff19; 
+}
+.content {
+  padding:0 40px;
+  width: 400px;
+}
+
+i {
+  font-size: 20px;
+  color: #b74e91;
+  margin-top: 16px;
+}
+
+.content p {
+  padding: 0 0 20px 0;
+}
+
+
+/*form section*/
+
+.form-section label{
+  display: block;
+  padding: 20px 0;
+}
+
+.leftsec, .right-sec {
+vertical-align: top;
+}
+
+.left-sec {
+  overflow: auto;
+  width: 700px;
+}
+
+.right-sec {
+  padding-left: 20px;
+}
+
+.input {
+  width: 300px;
+  height: 40px;
+  border:1px solid #ffffff26;
+  background-color: #ffffff0d;
+  border-radius: 3px;
+}
+
+.Message {
+  width: 620px;
+  height:200px;
+}
+
+.top-input-row {
+  padding-right: 10px;
+}
+
+.form-txt {
+  padding: 20px 0;
+}
+
+.right-sec i {
+  padding-right: 10px;
+  color: #ffffff8c;
+  cursor: pointer;
+}
+
+
+/*footer section*/
+
+
+.footer {
+  padding: 80px 0;
+  margin-left: 300px;
+}
+.footer small {
+  padding: 20px 0 20px 90px;
+  color: #ffffff50;
+}
+
