@@ -97,8 +97,8 @@ p {
 
 .hero {
   padding: 25% 0 25% 60px;
-  background: url("assets/media/Radha-krishna.jpg");
-  background-color: #5e42a6;
+  background: linear-gradient(#5e42a680, #5e42a680), url("../../assets/media/Radha-krishna.jpg");
+  background-position: 40%;
 }
 
 .form-section {
@@ -227,6 +227,7 @@ button:hover {
   border: 1px solid #ffffff19;
 }
 .icon-bg {
+  position: relative;
   background-color: white;
   height: 50px;
   width:50px;
@@ -250,7 +251,10 @@ button:hover {
 i {
   font-size: 20px;
   color: #b74e91;
-  margin-top: 16px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 
 .content p {
