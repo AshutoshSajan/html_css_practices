@@ -1,0 +1,172 @@
+/*  css reset     */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*generel css*/
+
+/*main {
+  margin: 0 auto;
+  text-align: center;
+}
+*/
+
+*,*:before, *:after {
+  box-sizing: border-box;
+}
+
+.center {
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.primary-clr {
+  color: white;
+}
+.inline-block {
+  display: inline-block;
+}
+
+.navigation {
+  background-color: #FF5733;
+}
+.list {
+  padding: 20px;
+}
+
+.links {
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.shadow-box {
+  padding: 40px 0;
+}
+
+.page {
+  text-transform: capitalize;
+  line-height: 30px;
+  vertical-align: top;
+  background-color: #0B519C;
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 24px;
+  width: 380px;
+  height: 600px;
+  box-shadow: 9px 9px 5px 0px #393B3D;
+}
+
+.center {
+  margin: 0 30px; 
+}
+
+.unorder-lst {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.ordered-lst {
+  margin-top: 0;
+  list-style-type: decimal;
+}
+
+.dt-title {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.dd-details {
+  text-indent: initial; 
+  padding: 20px 0 20px 45px;
+  font-size: 20px;
+}
+
+.middle-list {
+  text-align: left;
+}
+
+.right-list {
+  line-height: 40px;
+  list-style: none;
+  list-style-image:<i class="fas fa-check"></i>; 
+}
+.unorder-lst i {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 14px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.no-style {
+  list-style: none;
+}
+
+.cube {
+  margin-left: 30px;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+
+/*    footer    */
+
+
+.footer .navigation {
+
+  background-color: #303030;
+}
+.no-padding {
+  padding-left: 0;
+}
