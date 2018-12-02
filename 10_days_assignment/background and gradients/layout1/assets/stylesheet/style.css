@@ -81,7 +81,7 @@ p {
 }
 
 .leftnav {
-  padding: 17% 50px 0 50px;
+  position: relative;
   text-align: right;
   position: fixed;
   display: inline-block;
@@ -121,12 +121,19 @@ p {
   background-color: #493382;
 }
 
+.list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 
 .links {
   text-transform: uppercase;
   text-decoration: none;
 }
 .list li {
+  width: 250px;
   padding: 30px 0;
   border-bottom: 3px solid blue;
   border-image: linear-gradient(to right, #5e42a6, #b74e91) 30;
@@ -165,11 +172,11 @@ button {
   padding: 15px 35px;
   margin-top: 30px;
   cursor: pointer;
+
 }
 
 button:hover {
   background-color: #ffffff26;
-
 }
 
 .inline-block {
