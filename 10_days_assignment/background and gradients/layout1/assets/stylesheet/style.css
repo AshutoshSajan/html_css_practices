@@ -97,7 +97,7 @@ p {
 
 .hero {
   padding: 25% 0 25% 60px;
-  background: linear-gradient(#5e42a680, #5e42a680), url("../../assets/media/Radha-krishna.jpg");
+  background: linear-gradient(rgba(94,66,166,.5), rgba(94,66,166,.5)), url("../../assets/media/Radha-krishna.jpg");
   background-position: 40%;
 }
 
@@ -132,14 +132,14 @@ p {
   border-image: linear-gradient(to right, #5e42a6, #b74e91) 30;
 }
 
-/*.list li:hover {
-  border-bottom-color: gray;
-}*/
 
 .links:hover {
   color: white;
 }
-
+/*.list li:hover {
+  border-color: yellow;
+}
+*/
 
 /*    right page    */
 
@@ -232,7 +232,6 @@ button:hover {
   height: 50px;
   width:50px;
   border-radius: 50px;
-  text-align: center;
   vertical-align: top;
   margin: 20px 0 0 40px;
 }
@@ -248,7 +247,7 @@ button:hover {
   width: 400px;
 }
 
-i {
+.icon-bg i {
   font-size: 20px;
   color: #b74e91;
   position: absolute;
@@ -291,7 +290,7 @@ vertical-align: top;
 }
 
 .Message {
-  width: 620px;
+  width: 610px;
   height:200px;
 }
 
@@ -303,9 +302,8 @@ vertical-align: top;
   padding: 20px 0;
 }
 
-.right-sec i {
+.small-icon i {
   padding-right: 10px;
-  color: #ffffff8c;
   cursor: pointer;
 }
 
