@@ -193,6 +193,7 @@ body {
 }
 
 .icons {
+	position: relative;
 	width: 130px;
 	height: 130px;
 	margin: 0 20px;
@@ -203,7 +204,10 @@ body {
 	border-radius: 50%; 
 }
 .icons i {
-	margin: 30px 0 0 0 ;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	color: white;
 }
 
@@ -227,6 +231,7 @@ body {
 
 
 .footericon {
+	position: relative;
 	display: inline-block;
 	height: 40px;
 	width: 40px;
@@ -235,7 +240,10 @@ body {
 	color: white; 
 }
 .foot {
-	margin: 7px 0 0 0 ;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	font-size: 25px;
 	color: white;
 }
