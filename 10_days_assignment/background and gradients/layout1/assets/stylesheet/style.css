@@ -133,7 +133,7 @@ p {
   text-decoration: none;
 }
 .list li {
-  width: 250px;
+  width: 15vw;
   padding: 30px 0;
   border-bottom: 3px solid blue;
   border-image: linear-gradient(to right, #5e42a6, #b74e91) 30;
