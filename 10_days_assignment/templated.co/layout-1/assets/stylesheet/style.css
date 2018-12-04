@@ -1,0 +1,168 @@
+/*		css reset 		*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*		general css 		*/
+
+*,*:before, *:after {
+  box-sizing: border-box;
+}
+
+.page {
+  background: linear-gradient(to right, #FAA4F2, #145583);
+}
+
+.primary-clr {
+  color: #ffffffa6;
+}
+
+.wrapper {
+  padding: 80px 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.inline-block {
+  vertical-align: top;
+	display: inline-block;
+	text-align: center;
+}
+
+.round-img {
+  border-radius: 50%;
+  border: 8px solid #145583;
+  box-shadow: 0 0 0 1px white;
+}
+
+.head {
+  width: 900px;
+  line-height: 1.5;
+  padding: 40px 0;
+  font-size: 30px;
+}
+
+.img-sec {
+  padding-top: 40px;
+}
+
+.icon-bg {
+  display: inline-block;
+  margin: 20px 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #ffffff26;
+  position: relative;
+}
+
+.head strong {
+  color: #f3f3f3;
+}
+
+.center i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.icon-bg:hover {
+  background-color: #ffffff26; 
+}
+
+.img-box {
+  border: 1px solid #ffffff26;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.img-sec img {
+  border-radius: 3px;
+}
+.img-box p {
+  margin-top: 20px;
+}
+
+.img-box:hover {
+  box-shadow: 0px 0px 3px 1px #DC77E5;
+}
+
+.img-box a {
+  text-decoration: none;
+}
+
+.middle {
+  margin: 0 75px;
+}
+
+.line {
+  border:0;
+  border-top: 1px solid #ffffff26;
+  width: 200px;
+}
+
+.foot {
+  padding: 40px 0 80px 0;
+}
+
+.links {
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px dotted #f3f3f3;
+}
+
+.links:hover {
+  border-bottom: none;
+}
