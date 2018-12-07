@@ -51,22 +51,69 @@ table {
 
 /*		general css 		*/
 
-*,*:before, *:after {
+
+*,*:before,*:after {
   box-sizing: border-box;
 }
 
 body {
-  font-family: font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f3f3f3;
+  color: #888;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.logo {
-  font-size: 20px;
-  font-family: font-family: 'Oswald', sans-serif;
+/*    clearfix    */
+
+.cf:before, .cf:after {
+  content: "";
+  display: table;
 }
+.cf:after {
+  clear: both;
+}
+.cf {
+  clear: both;
+  *zoom:1;
+}
+
+.wrapper {
+  margin: 164px auto;
+  max-width: 1400px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  padding: 0 0 10px 0;
+  font-size: 34px;
+}
+h4 {
+  padding: 20px 0 10px 0;
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h5:hover {
+  color: #3ed8c4; 
+}
+
 
 .primary-clr {
   color: #888;
 }
+
 
 .head-clr {
   color: #3ed8c4;
@@ -79,8 +126,238 @@ body {
 .inline-blk {
   display: inline-block;
 }
+
 .head {
-  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 10;
+  line-height: 80px;
+  padding: 0 40px;
   background-color: #2ebfac;
 }
-.
+.head span {
+  float: left;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.logo {
+  font-family: 'Oswald', sans-serif;
+  vertical-align: middle;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.nav-lst {
+  vertical-align: middle;
+  float: right;
+}
+
+.dropdown-list {
+  position: relative;
+}
+
+.dropdown-content {
+  background-color: black;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0 0 2px 1px #ddd;
+  z-index: 1;
+}
+
+.dropdown-list, .dropdown-content:hover, {
+  display: block;
+  width: 100px;
+  color: green;
+  z-index: 2;
+}
+
+
+/*.subsection {
+  position: absolute;
+  display: none;
+  user-select: none;
+}
+
+.dropdown, .subsection:hover {
+  z-index: 1;
+  display: inline-block;
+  position: absolute;
+  left: 120px;
+  top: 10px;
+  margin: 0;
+  cursor: pointer;
+}*/
+
+/*.lst-2 {
+  border-bottom: 1px solid #888;
+  text-align: center;
+  height: 50px;
+  width: 100px;
+}
+.lst-2:hover {
+  background-color: #2ebfac;
+}
+*/
+/*.subsection {
+  position: relative;
+  display: none;
+}*/
+
+/*.subsection:hover {
+  display: inline-block;
+  position: absolute;
+  left: -20px;
+  top: 20px;
+
+}*/
+
+.list {
+  padding: 0 20px;
+  text-transform: capitalize;
+}
+
+
+.btn {
+  margin: 20px 0;
+  border: 1px solid #888;
+  font-size: 14px;
+  border-radius: 40px;
+  padding: 12px 30px;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  border-color: #2ebfac;
+  color: #2ebfac;
+  background-color: #ffffff10;
+}
+.top-btn:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.top-btn {
+  border: 1px solid #ffffff;
+  font-size: 16px;
+}
+
+
+.left-sec {
+  border-right: 1px solid #CFD8DC;
+  vertical-align: top;
+  width: 900px;
+}
+
+
+.bg-img {
+  position: relative;
+  background-size: cover;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.img-txt {
+  display: inline-block;
+  width: 800px;
+  position: absolute; 
+  text-align: left;
+  top: 50%;
+  left: 40px;
+  z-index: 1;
+}
+
+.txt-box {
+  text-align: left;
+}
+
+p {
+  padding: 10px 0;
+  line-height: 1.2;
+}
+
+.right-sec {
+  margin-top: 0;
+  text-align: left;
+  vertical-align: top;
+  width: 500px;
+}
+
+.icon-box {
+  width: 50%;
+  padding: 40px 0;
+}
+
+.top-row {
+  border-top: 1px solid #CFD8DC;
+  border-bottom: 1px solid #CFD8DC;
+}
+.bottom-row {
+  border-bottom: 1px solid #CFD8DC;
+}
+
+.lft-vt-clm {
+  border-right: 1px solid #CFD8DC;
+}
+
+.icon-box i {
+  color: #3ed8c4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-bg {
+  margin: 20px 0 0 0;
+  vertical-align: top;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #3ed8c4;
+}
+
+.icon-txt {
+  padding: 0 20px;
+  width: 300px;
+  text-align: left;
+}
+
+.container {
+  text-align: left;
+  padding: 40px 40px;
+}
+
+.data {
+  padding: 20px 40px;
+}
+.data p {
+  font-size: 14px;
+}
+
+.right-btm-btn{
+  margin: 40px 0 0 0;
+}
+
+hr {
+  margin: 20px 0;
+  border:0;
+  border-top: 1px solid #CFD8DC;
+}
+
+.right-btm-btn {
+  padding-top: 40px;
+}
