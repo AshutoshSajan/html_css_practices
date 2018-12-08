@@ -373,6 +373,7 @@ p {
 }
 
 .btm-left-sec, .btm-mid-sec {
+  padding: 40px 0;
   vertical-align: top;
   width: 50%;
 }
@@ -383,11 +384,11 @@ p {
 
 .bottom-sec {
   width: 100%;
-  /*margin-top: 80px;*/
   position: relative;
 }
 
 .btm-right-sec {
+  padding: 40px 0;
   position: absolute;
   top: 0;
   right: 60px;
