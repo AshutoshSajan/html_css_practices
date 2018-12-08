@@ -135,6 +135,20 @@ h5:hover {
   display: inline-block;
 }
 
+p {
+  padding: 10px 0;
+  line-height: 1.4;
+}
+
+.container {
+  text-align: left;
+  padding: 40px;
+}
+
+
+/*header section*/
+
+
 .head {
   width: 100%;
   position: fixed;
@@ -166,6 +180,11 @@ a {
 .nav-lst {
   vertical-align: middle;
   float: right;
+}
+
+.list {
+  padding: 0 20px;
+  text-transform: capitalize;
 }
 
 /*.dropdown-list {
@@ -228,10 +247,10 @@ a {
 
 }*/
 
-.list {
-  padding: 0 20px;
-  text-transform: capitalize;
-}
+
+
+
+/*    buttons     */
 
 
 .btn {
@@ -255,11 +274,17 @@ a {
   color: #ffffff;
   border: 1px solid #ffffff;
 }
-.header-btn {
+.header-btn, .img-btn {
   color: #ffffff; 
   border: 1px solid #ffffff;
-  font-size: 16px;
 }
+
+.head i {
+  padding: 0 10px;
+}
+
+
+/*    left aside section    */
 
 
 .left-sec {
@@ -269,7 +294,7 @@ a {
 }
 
 
-.bg-img {
+.bg-img-box {
   position: relative;
   background-size: cover;
 }
@@ -291,23 +316,12 @@ a {
 
 .txt-box {
   text-align: left;
-}
-
-p {
-  padding: 10px 0;
-  line-height: 1.4;
-}
-
-.right-sec {
-  margin-top: 0;
-  text-align: left;
-  vertical-align: top;
-  width: 500px;
+  padding-left: 20px;
 }
 
 .icon-box {
   width: 50%;
-  padding: 40px 0;
+  text-align: center;
 }
 
 .top-row {
@@ -323,6 +337,7 @@ p {
 }
 
 .page i, .footer i {
+  cursor: pointer;
   color: #3ed8c4;
   position: absolute;
   top: 50%;
@@ -346,13 +361,23 @@ p {
   text-align: left;
 }
 
-.right-sec-2nd-3rd-head {
-  padding-bottom: 40px;
+
+/*    right aside section     */
+
+
+.right-sec {
+  margin-top: 0;
+  text-align: left;
+  vertical-align: top;
+  width: 500px;
 }
 
-.container {
-  text-align: left;
-  padding: 40px 40px;
+.right-sec-col {
+   border-bottom: 1px solid #CFD8DC; 
+}
+
+.right-sec-2nd-3rd-head {
+  padding-bottom: 40px;
 }
 
 .right-sec-detail-list {
@@ -368,8 +393,16 @@ p {
   border: none;
 }
 
-.right-sec-btm-btn{
+.right-sec-btm-btn {
   margin: 40px 0 0 0;
+}
+
+
+/*bottom section*/
+
+.bottom-sec {
+  width: 100%;
+  position: relative;
 }
 
 .btm-left-sec, .btm-mid-sec {
@@ -378,14 +411,26 @@ p {
   width: 50%;
 }
 
+
+/*    bottom-mid-section    */
+
+
 .btm-mid-sec {
   padding-top: 60px;
 }
 
-.bottom-sec {
-  width: 100%;
-  position: relative;
+.round-img {
+  border-radius: 50%;
+  vertical-align: middle;
 }
+
+.btm-img-sec {
+  padding: 20px 0;
+}
+
+
+/*    bottom-right-section    */
+
 
 .btm-right-sec {
   padding: 40px 0;
@@ -411,14 +456,8 @@ p {
   color: #3ed8c4;
 }
 
-.round-img {
-  border-radius: 50%;
-  vertical-align: middle;
-}
 
-.btm-img-sec {
-  padding: 20px 0;
-}
+/*    footer    */
 
 .footer {
   margin-top: 80px;
@@ -431,4 +470,3 @@ p {
   padding: 50px 0;
   border-top: 1px solid rgba(136,136,136,.3);
 }
-
