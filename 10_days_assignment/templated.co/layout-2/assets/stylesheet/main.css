@@ -407,7 +407,7 @@ a {
 }
 
 .btm-left-sec, .btm-mid-sec {
-  padding: 40px 0;
+  padding: 40px 0 40px 50px;
   vertical-align: top;
   width: 50%;
 }
