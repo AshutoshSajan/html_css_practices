@@ -1,0 +1,221 @@
+/*    css reset     */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/*    general css     */
+
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #2E7A4F;
+  font-family: 'Patrick Hand', cursive;
+  text-align: center;
+}
+
+.page {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.inline-blk {
+  display: inline-block;
+}
+
+section, footer {
+  padding: 40px;
+}
+
+p, input {
+  font-size: 20px;
+}
+
+
+/*    header    */
+
+
+
+li {
+  margin: 20px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+a, li, h1, h2, legend, input .placeholder {
+  text-transform: capitalize;
+} 
+
+header h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px white;
+}
+
+header {
+  position: relative;
+  background:url("../../assets/media/triund.webp");
+  height: 700px;
+}
+
+
+/*    hero section    */
+
+
+.hero {
+  border-top: 10px solid #9CE4E2;
+  background-color: #eeeeeeee;
+}
+
+.hero p {
+  padding: 40px 0;
+}
+
+.media {
+  padding: 20px;
+  width: 33.3%;
+}
+
+video, audio {
+  width: 100%;
+}
+
+
+/*    embed media section     */
+
+
+.embed-media {
+  background-color: #1FEA22;
+}
+
+.embed-media iframe {
+  border: 20px solid white;
+}
+
+.embed-media h1 {
+  color: white;
+  font-size: 60px;
+}
+
+.embed-media p {
+  padding: 20px 0;
+}
+
+
+/*    form section    */
+
+.form-sec legend {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-sec {
+  background-color: #84F5BD;
+}
+
+.form-sec form {
+  background-color: white;
+  padding: 40px 0;
+} 
+
+input {
+  width: 350px;
+  height: 40px;
+  margin: 20px 0;
+}
+
+.subject {
+  width: 704px;
+}
+
+.textarea {
+  margin: 20px 0;
+  width: 704px;
+}
+
+::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+.button {
+  border: 0;
+  width: 300px;
+  background-color: #2E7A4F;
+}
+
+
+
+/*    maps section   and footer     */
+
+
+.maps, footer {
+  background-color: #323232;
+}
+
+footer a {
+  color: white;
+}
+
+
