@@ -81,9 +81,14 @@ section, footer {
 }
 
 p, input {
+  line-height: 1.5;
   font-size: 20px;
 }
 
+p {
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
 
 /*    header    */
 
@@ -142,6 +147,17 @@ video, audio {
   width: 100%;
 }
 
+.position {
+  position: relative;
+}
+
+audio {
+  position: absolute;
+  top: -17%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 /*    embed media section     */
 
@@ -178,7 +194,11 @@ video, audio {
 .form-sec form {
   background-color: white;
   padding: 40px 0;
-} 
+}
+
+form {
+  box-shadow: 0 0 8px 4px #9D9C9C;
+}
 
 input {
   width: 350px;
@@ -195,8 +215,9 @@ input {
   width: 704px;
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
   text-transform: capitalize;
+  font-size: 16px;
 }
 
 .button {
@@ -208,6 +229,7 @@ input {
 
 
 /*    maps section   and footer     */
+
 
 
 .maps, footer {
