@@ -142,8 +142,8 @@ input {
 	display: inline-block;
 }
 
-section {
-	/*padding: 40px;*/
+.icon-sec, .img-sec, .form-sec, .info-sec {
+	padding: 40px 0;
 }
 
 img {
@@ -154,7 +154,28 @@ img {
 
 
 
+/*		clearfix 		*/
+
+
+
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	clear: both;
+	*zoom: 1;
+}
+
+
+
+
 /* 		main css 		*/
+
 
 
 
@@ -260,11 +281,14 @@ strong {
 	width: 500px;
 	top: 40%;
 	margin: 0 auto;
-	z-index: -1;
 }
 
 .icon-container {
-	/*border: 1px solid black;*/
+	z-index: 1;
+}
+
+.icon-cntnr-parnt {
+	height: 300px;
 }
 
 
@@ -375,19 +399,20 @@ input:focus {
 	outline: 0;
 }
 
-.input-1 {
+.email-input {
 	width: 500px;
 	height: 50px;
 	background-color: transparent;
 }
 
-.input-2 {
+.submit-btn {
 	position: absolute;
 	top: 0;
 	right: 0;
-	background-color: white;
 	width: 100px;
 	height: 50px;
+	text-transform: capitalize;
+	background-color: white;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
@@ -404,29 +429,55 @@ input:focus {
 /*		info section 		*/
 
 
+
 .cntct-info {
 	width: 300px;
 	margin:0 40px;
+	vertical-align: top;
+}
+
+.contact-details {
+	padding: 40px 0;
 }
 
 .map-info {
-	/*padding: 0 40px;*/
 	border-left: 1px solid #CFD8DC;
 	border-right: 1px solid #CFD8DC;
 }
 
 .info-sec .icon-circle {
-	vertical-align: top;
 	width: 70px;
 	height: 70px;
+	vertical-align: top;
 }
 
 .info-sec i {
 	font-size: 24px;
 	color: #ee6588;
-	z-index: 100;
+	cursor: pointer;
 }
 
-.contact-icon {
-	/*padding: 20px 0;*/
+
+
+/*		footer 		*/
+
+
+
+
+.footer {
+	padding: 40px 20px;
+	background-color: #bbbbbb;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.nav-lst {
+	float: right;
+}
+
+.list i {
+	margin: 0 10px;
+	font-size: 18px;
+	color: #656565;
+	/*cursor: pointer;*/
 }
