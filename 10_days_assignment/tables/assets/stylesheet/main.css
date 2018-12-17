@@ -1,0 +1,348 @@
+/* 		css reset 		*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+/*		general css 		*/
+
+
+
+*,*:before, *:after {
+	box-sizing: border-box;
+}
+
+
+
+/*====clearfix====*/
+
+
+
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	clear: both;
+	*zoom: 1;
+}
+
+
+body {
+	text-align: center;
+	color: white;
+}
+
+
+h1 {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+h2, legend, caption {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4, a {
+	font-size: 22px;
+}
+
+p, button, input, textarea {
+	font-size: 20px;
+}
+
+h1, h2, h3, h4, p, footer, caption {
+	padding: 20px 0;
+}
+
+img {
+	width: 30%;
+	width: 30%;
+	margin: 20px;
+}
+
+.primary-clr {
+	color: #fff;
+}
+
+.secondary-clr {
+	color: #464747;
+}
+
+.inline-blk {
+	display: inline-block;
+}
+
+
+a {
+	margin: 0 20px;
+	text-decoration: none;
+	color: white;
+}
+
+.btn {
+	padding: 10px 40px;
+	border: 1px solid black;
+	margin: 20px 0;
+	background-color: white;
+}
+
+input, .btn:focus {
+	outline: 0;
+}
+
+
+.container {
+	padding: 40px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+header,
+caption,
+fieldset {
+	text-transform: uppercase;
+}
+
+
+
+/*====header section=====*/
+
+
+
+.header {
+	background-color: #325B87;
+	padding: 40px 100px;
+	font-weight: bold;
+}
+
+.logo {
+	float: left;
+	font-size: 30px;
+}
+
+.primarry-nav {
+	float: right;
+	font-size: 24px;
+}
+
+
+
+/*====hero section====*/
+
+
+
+.hero, #about-sec {
+	background: linear-gradient(180deg, #10574E, #279587);
+}
+
+.hero img {
+	border-radius: 50%;
+}
+
+
+
+/*====about section====*/
+
+
+
+.about-sec-txt-box {
+	width: 30%;
+	padding: 30px;
+	text-align: left;
+	line-height: 1.5;
+}
+
+
+
+/*=====form section=====*/
+
+
+
+.info-input, textarea {
+	border: 0;
+	margin: 20px 0;
+	width: 600px;
+	height: 30px;
+	border-bottom: 1px solid black;
+}
+
+textarea {
+	height: 200px;
+}
+
+fieldset {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.form-btn {
+	background-color: #10645A;
+	display: block;
+}
+
+.addr-info {
+	line-height: 1.3;
+}
+
+.map-sec {
+	background-color: silver;
+}
+
+
+::-webkit-input-placeholder {
+	text-transform: capitalize;
+}
+
+
+/*=====table section====*/
+
+
+
+.table {
+	width: 70%;
+	margin: 0 auto;
+	text-align: left;
+	background-color: gray;
+}
+
+th {
+	color: #0A82A5;
+	background-color: #2E3030;
+}
+
+td:first-child {
+	color: #B9385D;
+}
+
+th, td:first-child {
+text-transform: capitalize;
+}
+
+td {
+	color: black;
+}
+
+td, th {
+	padding: 20px;
+	width: 300px;
+	font-size: 24px;
+}
+
+tr:nth-child(even) {
+	background-color: #44515A;
+}
+
+tr:nth-child(odd) {
+	background-color: #39444D;
+}
+
+
+
+
+/*=====info section=====*/
+
+
+
+.info-sec {
+	background-color: #324E61;
+}
+
+
+.info-txt-box {
+	width: 30%;
+	vertical-align: top;
+}
+
+.icon-list {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border: 1px solid white;
+	border-radius: 50%;
+	margin: 5px;
+}
+
+.icon-list i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.addr,
+strong,
+small {
+	text-transform: capitalize;
+}
+
+strong {
+	color: #0A82A5;
+}
+
+
+/*====footer section====*/
+
+
+
+.prim-footer {
+	background-color: #274945;
+{
