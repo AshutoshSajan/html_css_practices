@@ -107,6 +107,10 @@ p, button, input, textarea {
 	font-size: 20px;
 }
 
+p {
+	line-height: 1.5;
+}
+
 h1, h2, h3, h4, p, footer, caption {
 	padding: 20px 0;
 }
@@ -115,6 +119,7 @@ img {
 	width: 30%;
 	width: 30%;
 	margin: 20px;
+	vertical-align: top;
 }
 
 .primary-clr {
@@ -141,6 +146,7 @@ a {
 	border: 1px solid black;
 	margin: 20px 0;
 	background-color: white;
+	cursor: pointer;
 }
 
 input, .btn:focus {
@@ -208,7 +214,6 @@ fieldset {
 	width: 30%;
 	padding: 30px;
 	text-align: left;
-	line-height: 1.5;
 }
 
 
@@ -258,19 +263,17 @@ fieldset {
 
 
 .table {
-	width: 70%;
 	margin: 0 auto;
 	text-align: left;
-	background-color: gray;
 }
 
 th {
 	color: #0A82A5;
-	background-color: #2E3030;
+	background-color: #171C1F;
 }
 
 td:first-child {
-	color: #B9385D;
+	color: #C01654;
 }
 
 th, td:first-child {
@@ -288,11 +291,11 @@ td, th {
 }
 
 tr:nth-child(even) {
-	background-color: #44515A;
+	background-color: #344147;
 }
 
 tr:nth-child(odd) {
-	background-color: #39444D;
+	background-color: #262F34;
 }
 
 
