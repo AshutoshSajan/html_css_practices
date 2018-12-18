@@ -152,6 +152,7 @@ a {
 	margin: 1.2rem 0;
 	background-color: white;
 	cursor: pointer;
+	text-transform: capitalize;
 }
 
 input, .btn:focus {
@@ -206,7 +207,8 @@ fieldset {
 
 
 
-.hero, #about-sec {
+.hero,
+#about-sec {
 	background: linear-gradient(180deg, #10574E, #279587);
 }
 
@@ -271,6 +273,8 @@ fieldset {
 
 
 .table {
+	max-width: 1400px;
+	width: 100%;
 	margin: 0 auto;
 	text-align: left;
 }
@@ -293,8 +297,10 @@ td {
 }
 
 td, th {
-	padding: 1.2rem;
-	width: 20vw;
+	padding-left: 1.2rem;
+	width: 5rem;
+	height: 3rem;
+	vertical-align: middle;
 	font-size: 1.5rem;
 }
 
@@ -370,10 +376,6 @@ strong {
 		float: none;
 	}
 
-	.header {
-		text-align: center;
-	}
-
 	img,
 	.list,
 	.info-txt-box,
@@ -382,5 +384,10 @@ strong {
 		width: 80%;
 		margin: 1rem auto;
 	}
+
+	/*td, th {
+		font-size: 1rem;
+		width: 1rem;
+	}*/
 
 }
