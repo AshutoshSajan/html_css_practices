@@ -1,3 +1,7 @@
+:root {
+	font-size: 16px;
+}
+
 /* 		css reset 		*/
 
 
@@ -79,45 +83,47 @@ table {
 }
 
 body {
+	max-width: 1800px;
+	width: 100%;
 	text-align: center;
 	color: white;
 }
 
 
 h1 {
-	font-size: 50px;
+	font-size: 3rem;
 	font-weight: bold;
 }
 
 h2, legend, caption {
-	font-size: 40px;
+	font-size: 2.5rem;
 	font-weight: bold;
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 2rem;
 }
 
 h4, a {
-	font-size: 22px;
+	font-size: 1.5rem;
 }
 
 p, button, input, textarea {
-	font-size: 20px;
+	font-size: 1.5rem;
 }
 
 p {
-	line-height: 1.5;
+	line-height: 1.3;
 }
 
 h1, h2, h3, h4, p, footer, caption {
-	padding: 20px 0;
+	padding: 1.2rem 0;
 }
 
 img {
 	width: 30%;
 	width: 30%;
-	margin: 20px;
+	margin: 1.5rem;
 	vertical-align: top;
 }
 
@@ -135,15 +141,15 @@ img {
 
 
 a {
-	margin: 0 20px;
+	margin: 0 1.2rem;
 	text-decoration: none;
 	color: white;
 }
 
 .btn {
-	padding: 10px 40px;
+	padding: 0.6rem 2.5rem;
 	border: 1px solid black;
-	margin: 20px 0;
+	margin: 1.2rem 0;
 	background-color: white;
 	cursor: pointer;
 }
@@ -154,7 +160,7 @@ input, .btn:focus {
 
 
 .container {
-	padding: 40px 0;
+	padding: 2.7rem 0;
 }
 
 h1,
@@ -167,6 +173,10 @@ fieldset {
 	text-transform: uppercase;
 }
 
+.responsive-map {
+	position: relative;
+	overflow: hidden;
+}
 
 
 /*====header section=====*/
@@ -175,18 +185,19 @@ fieldset {
 
 .header {
 	background-color: #325B87;
-	padding: 40px 100px;
 	font-weight: bold;
+	padding: 1rem 4rem;
+	line-height: 6rem;
 }
 
 .logo {
 	float: left;
-	font-size: 30px;
+	font-size: 3rem;
 }
 
 .primarry-nav {
 	float: right;
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 
@@ -224,23 +235,21 @@ fieldset {
 .info-input, textarea {
 	border: 0;
 	margin: 20px 0;
-	width: 600px;
-	height: 30px;
+	width: 80%;
+	height: 2rem;
+	text-align: left;
 	border-bottom: 1px solid black;
 }
 
-textarea {
-	height: 200px;
-}
-
 fieldset {
-	width: 600px;
+	width: 80%;
 	margin: 0 auto;
 }
 
 .form-btn {
 	background-color: #10645A;
-	display: block;
+	display:block;
+	margin-left: 10%;
 }
 
 .addr-info {
@@ -284,9 +293,9 @@ td {
 }
 
 td, th {
-	padding: 20px;
-	width: 300px;
-	font-size: 24px;
+	padding: 1.2rem;
+	width: 20vw;
+	font-size: 1.5rem;
 }
 
 tr:nth-child(even) {
@@ -316,8 +325,8 @@ tr:nth-child(odd) {
 
 .icon-list {
 	position: relative;
-	width: 40px;
-	height: 40px;
+	width: 2.5rem;
+	height: 2.5rem;
 	border: 1px solid white;
 	border-radius: 50%;
 	margin: 5px;
@@ -327,6 +336,7 @@ tr:nth-child(odd) {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	font-size: 1.2rem;
 	transform: translate(-50%,-50%);
 }
 
@@ -347,4 +357,30 @@ strong {
 
 .prim-footer {
 	background-color: #274945;
-{
+}
+
+
+
+/*responsive css*/
+
+
+@media all and (max-width: 600px) {
+
+	.logo, .primarry-nav {
+		float: none;
+	}
+
+	.header {
+		text-align: center;
+	}
+
+	img,
+	.list,
+	.info-txt-box,
+	.about-sec-txt-box {
+		display: block;
+		width: 80%;
+		margin: 1rem auto;
+	}
+
+}
