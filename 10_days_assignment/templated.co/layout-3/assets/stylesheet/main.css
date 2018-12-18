@@ -274,6 +274,7 @@ strong {
 .icon-box i {
 	font-size: 34px;
 	color: #ee6588;
+	cursor: pointer;
 }
 
 .icon-conctor-line {
