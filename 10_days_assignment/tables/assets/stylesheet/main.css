@@ -155,7 +155,7 @@ a {
 	text-transform: capitalize;
 }
 
-input, .btn:focus {
+input, textarea, .btn:focus {
 	outline: 0;
 }
 
@@ -174,10 +174,10 @@ fieldset {
 	text-transform: uppercase;
 }
 
-.responsive-map {
+/*.responsive-map {
 	position: relative;
 	overflow: hidden;
-}
+}*/
 
 
 /*====header section=====*/
@@ -240,7 +240,12 @@ fieldset {
 	width: 80%;
 	height: 2rem;
 	text-align: left;
+	color: gray;
 	border-bottom: 1px solid black;
+}
+
+textarea {
+	height: auto;
 }
 
 fieldset {
@@ -265,6 +270,7 @@ fieldset {
 
 ::-webkit-input-placeholder {
 	text-transform: capitalize;
+	font-size: 1.2rem;
 }
 
 
