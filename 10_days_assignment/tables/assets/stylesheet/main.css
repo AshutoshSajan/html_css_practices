@@ -378,22 +378,20 @@ strong {
 
 @media all and (max-width: 600px) {
 
-	.logo, .primarry-nav {
-		float: none;
-	}
+:root {
+	font-size: 2vw;
+}
+.logo, .primarry-nav {
+	float: none;
+}
 
-	img,
-	.list,
-	.info-txt-box,
-	.about-sec-txt-box {
-		display: block;
-		width: 80%;
-		margin: 1rem auto;
-	}
-
-	/*td, th {
-		font-size: 1rem;
-		width: 1rem;
-	}*/
+img,
+.list,
+.info-txt-box,
+.about-sec-txt-box {
+	display: block;
+	width: 80%;
+	margin: 1rem auto;
+}
 
 }
