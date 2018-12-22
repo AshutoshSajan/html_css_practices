@@ -1,4 +1,4 @@
-/*================================*/
+================================*/
 						/*root css*/
 /*================================*/
 
@@ -89,6 +89,10 @@ h2 {
 
 body {
 	background-color: rgba(255,255,255, 0.7);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
 	max-width: 1600px;
 	width: 100%;
 	margin: 0 auto;
@@ -99,12 +103,11 @@ body {
 /*================================*/
 
 .header {
-	margin: 2rem 0;
 	display: flex;
-	padding: 0 3rem;
+	padding: 1rem 0;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: flex-start;
 }
 
 .header h1 {
@@ -116,17 +119,60 @@ body {
 }
 
 
-h1, h2, .header {
+h1, h2, .header,.select {
 	text-transform: capitalize;
 }
 
 .option-cntnr {
 	margin-left: 10rem;
 }
-.select {
-	overflow: scroll;
-}
 
+/*================================*/
+				/*select container*/
+/*================================*/
+
+
+.select-container {
+  position:relative;
+  display:inline-block;
+  vertical-align:top;
+}
+  .icon-select-arrows {
+    display:block;
+    width: 1.5rem;
+    height: 1.5rem;
+    position:absolute;
+    top:0;
+    right:0;
+    border-left:1px solid #ddd;
+    background-color:#fff;
+    background-size: 4rem 4rem;
+    background-position:top right;
+    z-index:30;
+    cursor:pointer;
+    pointer-events:none;
+    background: url(../../assets/media/icon.png) no-repeat 0.5rem center;
+    background-color:
+  }
+  select {
+    -webkit-appearance: none;
+    position: relative;
+    z-index: 29;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    width: 8rem;
+    outline: none;
+
+    height: 1.5rem;
+    padding: 0 2rem 0 0.5rem;
+    line-height: 1.6rem;
+    border-radius: 0.3rem;
+
+    background: #fff;
+    font-family: inherit;
+    color: #333;
+    font-size: 0.9rem;
+  }
 
 
 /*================================*/
@@ -139,7 +185,6 @@ h1, h2, .header {
 	border: 0.5px solid black;
 	flex-wrap: wrap;
 	flex: 1 1 300px;
-	align-content: center;
 }
 
 .img-box > * {
@@ -160,6 +205,46 @@ h1, h2, .header {
 	margin: 0 auto;
 }
 
-.img-sec-cntnr {
-	margin: 2rem auto;
+
+/*========================================*/
+	/*responsive and addeptive media query*/
+/*========================================*/
+
+
+@media all and (min-width: 300px) and (max-width:900px) {
+
+	:root {
+		font-size: 10px;
+	}
+
+	.header {
+		flex: 1;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.img-box {
+		flex:1 1 100px;
+	}
+
+	.big-img {
+		flex:1 1 200px;
+		flex-wrap: wrap;
+		align-items: center;
+
+	}
+
+	.option-cntnr {
+		margin-left: 1rem;
+	}
+}
+
+@media all and (max-width: 300px){
+	.header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.option-cntnr {
+		margin: 1rem 0;
+	}
 }
