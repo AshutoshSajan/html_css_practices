@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="">
+		<style>
+			.item {
+				background-color: red;
+				padding: 20px;
+				border: 1px solid tomato;
+			}
+
+
+/*========================================================================================*/
+			/*grid template areas are very important to addjust every item equally*/
+/*========================================================================================*/
+
+
+			.container {
+				display: grid;
+				grid-gap: 20px;
+				grid-template-columns: 1fr 3fr 1fr;
+				grid-template-rows: 150px 150px 150px;
+				grid-template-areas: 
+					"side1 mid side2"
+				 	"side1 mid side2"
+				 	"footer footer footer"
+			}
+
+			.footer {
+				grid-area: footer;
+			}
+
+			.item1 {
+				grid-area: side1;
+			}
+
+			.item2{
+				grid-area: mid;
+			}
+			.item3 {
+				grid-area: side2;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item item1">1</div>
+			<div class="item item2">2</div>
+			<div class="item item3">3</div>
+			<div class="item item4 footer">4</div>
+		</div>
+	</body>
+</html>

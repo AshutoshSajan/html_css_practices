@@ -219,6 +219,8 @@ body {
   border: 10px solid #333;
   grid-template-columns: repeat(5, 1fr);
   /*grid-template-rows: 1fr 2fr 1fr;*/
+
+  grid-template-rows: repeat(3, 1fr); ============= /*connected to the line 252*/===========
 }
 
 .exercise-6 {
@@ -234,7 +236,156 @@ body {
   background-color: #bada55;
   color: red;
   /*grid-column: span 2;*/ /*this is a shorthand property*/
-  grid-column-start: 4;
-  grid-column-end: 10;
+  /*grid-column-start: 2; /*long hand property*/
+  /* grid-column-end: 5;*/
+  /*grid-column: 3 /span 2;*/  /*another shoethand property*/
+  /*grid-column: 1 / -1;*/ /*this shorthand trick is used to span the column across the full width*/
+  /*grid-column: 1 / 3;
+  grid-row: 3 /span 3;*/ /*this shorthand property is used to expand the item vertically*/
+
+
+/*=======================================================================*/
+  /*to take entire grid to the top following technique is used*/
+/*=======================================================================*/
+
+  grid-column: 1 / -1; /*colomns will not expand vertically without these two lines written below*/
+  grid-row: 1 / -2; ============= /*connected to the line 223 */=============
+
 }
 
+
+/*========================================*/
+      /*spaning and placing cardio*/
+
+            /*container 7*/
+/*========================================*/
+
+.container-7 {
+  display: grid;
+  grid-gap: 20px;
+  
+  /*make the grid 10 col wide,
+  every other taking up twice the free space*/
+  grid-template-columns: repeat(5, 1fr 2fr);
+
+  /*make the grid have 10 explicit rows,
+  50px high each*/
+  grid-template-rows: repeat(10, 50px);
+}
+
+.item {
+  background-color: pink;
+  border-radius: 5px;
+  border: 4px solid rgba(0,0,0,0.1);
+  padding: 20px 0;
+  font-size: 25px;
+  color: black;
+}
+
+/*with item1, start at col3 and go until 5*/
+/*.item1 {
+  grid-column: 3 / 5;
+}*/
+
+/*with item2, start at col5 and go until the end*/
+
+/*.item2 {
+  grid-column: 5 / -1;
+}*/
+
+/*make item 5 double span 2 cols and rows*/
+/*.item5 {
+  grid-column: span 2;
+  grid-row: span 2;
+}*/
+
+/*make item 8 two rows heigh*/
+/*.item8 {
+  grid-row: span 2;
+}*/
+
+/*make item 15 span the entire grid width*/
+/*.item15 {
+  grid-column: 1 / -1;
+}*/
+
+/*make item 18 span 4 widths, but end 9*/
+/*.item18 {
+  grid-column: span 4 / 9;
+}*/
+
+/*make item 20 start at row 4 and go for 3*/
+/*.item20 {
+  grid-row: 4/ span 3;
+}
+*/
+
+/*========================================*/
+      /*auto fit and auto fill*/
+
+            /*container 8*/
+/*========================================*/
+
+.container-8 {
+  display: grid;
+  grid-gap: 20px; 
+  border: 1px solid black;
+  /*grid-template-columns: repeat(5, 100px);*/
+
+/*=======================================================================*/
+  /*auto-fill works as responsive,
+  it adjusts all the contents within
+  the box when we stretch or shrinkthe box 
+  or window size*/
+              /*||
+                \/*/
+/*=======================================================================*/
+  /*grid-template-columns: repeat(auto-fill, 300px);*/
+
+
+
+/*=======================================================================*/
+/*auto-fit works as responsive,
+it adjusts all the contents within
+the box when we stretch or shrinkthe box 
+or window size*/
+
+/*only difference is that it ends the grid
+in end and dont left the extra space in the end*/ 
+              /*||
+                \/*/
+/*=======================================================================*/
+  grid-template-columns: repeat(auto-fit, 300px);
+}
+
+
+/*========================================*/
+      /*using minmax for responsive grid*/
+
+            /*container 9*/
+/*========================================*/
+
+.container-9 {
+  display: grid;
+  grid-gap: 20px; 
+  border: 1px solid black;
+  /*grid-template-columns: repeat(auto-fill, 100px);*/
+
+  /*our content doesn't get out from its
+  asctual grid space we can use "minmax" */
+  /*grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));*/
+
+  /*automatically take all the empty space.*/
+  /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
+
+  /*grid-template-columns: auto 200px 200px 200px;*/
+
+
+
+/*==========================================================================*/
+                        /*error in this section*/
+
+  grid-template-columns: fit-content(200px) 100px 100px 100px;
+/*==========================================================================*/
+
+}

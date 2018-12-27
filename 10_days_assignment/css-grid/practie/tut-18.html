@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<meta>
+		<title>reorder grid props</title>
+		<link rel="stylesheet" href="">
+		<style>
+			.container {
+				display: grid;
+				grid-gap: 20px;
+				border: 1px solid black;
+				grid-template-columns: repeat(10, 1fr);
+				grid-auto-flow: dense;
+			}
+
+			.item {
+				padding: 20px;
+				font-size: 30px;
+				font-weight: bold;
+				text-align: center;
+				vertical-align: middle;
+				background-color: tomato;
+			}
+
+			.content {
+				grid-column: 1 / -1;
+				order: 1;
+			}
+
+			.nav {
+				grid-column: span 8;
+				order: 3;
+			}
+			.logo {
+				grid-column: span 2;
+				order: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item logo">nav</div>
+			<div class="item nav">logo</div>
+			<div class="item content"><p>i am the content</p></div>
+		</div>
+	</body>
+</html>
