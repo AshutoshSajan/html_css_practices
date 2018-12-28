@@ -1,0 +1,240 @@
+:root {
+    font-size: 16px;
+}
+
+// css reset=====================================>
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// ==============================================
+								// border-box
+// ==============================================
+
+
+*,*:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 4rem;
+}
+h2 {
+	font-size: 3.5rem;
+}
+h3 {
+	font-size: 3rem;
+}
+h4 {
+	font-size: 3.5rem;
+}
+h5 {
+	font-size: 2rem;
+}
+h6 {
+	font-size: 1.4rem;
+}
+p, input, button {
+	font-size: 1.2rem;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0.5rem 0;
+}
+ 
+p {
+	line-height: 1.5;
+}
+ 
+
+// ==============================================
+								// header section
+// ==============================================
+
+
+.header {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	align-items: center;
+	background: #888;
+	padding: 1rem 2rem;
+}
+
+.header img {
+	height: 6rem;
+	width: 6rem;
+	background-color: #bbb;
+}
+
+
+// ==============================================
+								// hero section
+// ==============================================
+
+
+.hero {
+	display: grid;
+	grid-template-columns: 30% 1fr;
+	align-items: center;
+	background-image: url(../../assets/media/cat4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 60% 70%;
+	color: #fff;
+	padding: 10rem 2rem;
+}
+
+.hero h1 {
+	font-size: 8rem;
+}
+
+.header,
+.hero h1,
+.img-sec {
+	text-transform: capitalize;
+}
+
+
+// ==============================================
+								// image section
+// ==============================================
+
+
+.img-sec {
+	margin: 2rem auto;
+	display: grid;
+	grid-gap: 1.3rem;
+	width: 90%;
+	// this line of code will not make responsive grid
+	// grid-template-columns: repeat(3, 1fr);
+
+	// this line of code will help to make responsive grid
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.img {
+	display: grid;
+	height: 40vh;
+	position: relative;
+	background-origin: silver;
+	align-items: end;
+}
+
+// .img p {
+// 	position: absolute;
+// 	left: 0;
+// 	bottom: 0;
+// 	padding: 0.5rem 1rem;
+// 	background: rgba(255,255,255, 0.3);
+// 	width: 100%;
+// 	margin: 0;
+// }
+
+		// image section
+		// background images
+
+.img p {
+	margin: 0;
+	padding: 0.5rem 1rem;
+	background: rgba(255,255,255, 0.5);
+}
+.img1 {
+	background: url(../../assets/media/cat1.jpg);
+}
+.img2 {
+	background: url(../../assets/media/cat2.jpg);
+}
+.img3 {
+	background: url(../../assets/media/cat3.jpg);
+}
+.img4 {
+	background: url(../../assets/media/cat4.jpg);
+}
+.img5 {
+	background: url(../../assets/media/cat5.jpeg);
+}
+.img6 {
+	background: url(../../assets/media/cat6.jpg);
+}
+
+
+.img1, 
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+// media query
+
+@media all and (min-width:320px) and (max-width: 1000px){
+	:root {
+		font-size: 8px;
+	}
+
+	.header {
+	 grid-template-columns: 6rem 1fr;
+	}
+
+	.img-sec {
+		width: 100%;
+		margin: 0;
+	}
+
+	.hero {
+		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+	}
+} 
