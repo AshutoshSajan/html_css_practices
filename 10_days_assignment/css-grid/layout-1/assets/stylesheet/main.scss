@@ -68,22 +68,22 @@ body {
 }
 
 h1 {
-	font-size: 4rem;
-}
-h2 {
-	font-size: 3.5rem;
-}
-h3 {
 	font-size: 3rem;
 }
-h4 {
-	font-size: 3.5rem;
+h2 {
+	font-size: 2.7rem;
 }
-h5 {
+h3 {
+	font-size: 2.5rem;
+}
+h4 {
 	font-size: 2rem;
 }
+h5 {
+	font-size: 1.5rem;
+}
 h6 {
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 }
 p, input, button {
 	font-size: 1.2rem;
@@ -103,11 +103,13 @@ p {
 
 
 .header {
+	width: 100%;
 	display: grid;
-	grid-template-columns: 200px 1fr;
+	grid-template-columns: 1fr 10fr;
 	align-items: center;
 	background: #888;
-	padding: 1rem 2rem;
+	
+	// padding: 1rem 2rem;
 }
 
 .header img {
@@ -130,12 +132,8 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 60% 70%;
-	color: #fff;
 	padding: 10rem 2rem;
-}
-
-.hero h1 {
-	font-size: 8rem;
+	color: #fff;
 }
 
 .header,
@@ -154,7 +152,7 @@ p {
 	margin: 2rem auto;
 	display: grid;
 	grid-gap: 1.3rem;
-	width: 90%;
+	max-width: 90%;
 	// this line of code will not make responsive grid
 	// grid-template-columns: repeat(3, 1fr);
 
@@ -165,6 +163,7 @@ p {
 .img {
 	display: grid;
 	height: 40vh;
+	width: 100%;
 	position: relative;
 	background-origin: silver;
 	align-items: end;
@@ -220,7 +219,7 @@ p {
 
 // media query
 
-@media all and (min-width:320px) and (max-width: 1000px){
+@media all and (max-width: 900px){
 	:root {
 		font-size: 8px;
 	}
@@ -230,11 +229,29 @@ p {
 	}
 
 	.img-sec {
-		width: 100%;
-		margin: 0;
+		max-width: 100%;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
 	}
 
 	.hero {
 		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 	}
 } 
+
+
+// ==============================================
+								// media query 2
+// ==============================================
+
+
+
+@media all and (max-width: 320px){
+	.img-sec {
+		width: 100%;
+		margin: 0;
+		grid-gap: 0;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	}
+}
+
