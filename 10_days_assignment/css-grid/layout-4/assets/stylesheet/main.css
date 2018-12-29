@@ -1,0 +1,150 @@
+:root {
+  font-size: 16px; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2.3rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 3.5rem; }
+
+h5 {
+  font-size: 2rem; }
+
+h6 {
+  font-size: 1.4rem; }
+
+p, input, button {
+  font-size: 1.2rem; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0.5rem 0; }
+
+p {
+  line-height: 1.5; }
+
+.txt-cap {
+  text-transform: capitalize; }
+
+aside {
+  width: 15vw;
+  padding: 2rem;
+  text-transform: capitalize; }
+
+.padding {
+  padding: 1.5rem; }
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-areas: 'header header header' 'left 	mid 	right' 'footer footer footer'; }
+
+.header {
+  grid-column: 1/ -1;
+  grid-row: 1/span 2;
+  color: #ffff;
+  text-transform: capitalize;
+  text-align: center; }
+
+.header {
+  grid-area: header;
+  background-color: green; }
+
+.left-nav {
+  grid-area: left;
+  height: 80vh;
+  background-color: tomato; }
+
+.mid-sec {
+  grid-area: mid;
+  width: 70vw;
+  padding: 2rem; }
+
+.right-nav {
+  grid-area: right;
+  background-color: tomato; }
+
+.footer {
+  grid-area: footer;
+  background-color: skyblue; }
+
+@media all and (max-width: 900px) {
+  :root {
+    font-size: 8px; }
+
+  .contaner {
+    grid-template-areas: 'header header header' 'left left left' 'mid mid mid' 'right right right' 'footer footer footer'; }
+    .contaner .header {
+      grid-area: header;
+      grid-column: 1 / -1; }
+    .contaner .left-nav {
+      grid-area: left;
+      grid-column: 1 / -1; }
+    .contaner .right-nav {
+      grid-area: right; }
+    .contaner .mid-sec {
+      grid-area: mid; }
+    .contaner .footer {
+      grid-area: footer; } }
+
+/*# sourceMappingURL=main.css.map */
