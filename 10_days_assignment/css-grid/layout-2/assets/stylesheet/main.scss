@@ -116,9 +116,8 @@ a {
 	grid-template-columns: 2fr 10fr;
 	align-items: center;
 	grid-auto-flow: column;
-	// background: #f3f3f3;
+	background: #f3f3f3;
 	padding: 1rem 0;
-	background-color: gray;
 	color: #ebd98b;
 }
 
@@ -152,11 +151,11 @@ a {
 }
 
 .content {
-	align-self: stretch;
+	// align-self: stretch;
 	background: rgba(0,0,0,0.8);
 	padding: 1rem 0 0 2rem;
 	color: #f3f3f3;
-
+	height: auto;
 }
 
 
@@ -232,7 +231,8 @@ a {
  	}
 
  	.item {
-		display: grid;
+	grid-column: auto;
+	grid-row: auto;
 	}
 }
 

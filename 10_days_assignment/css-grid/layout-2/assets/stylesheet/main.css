@@ -91,8 +91,8 @@ a {
   grid-template-columns: 2fr 10fr;
   align-items: center;
   grid-auto-flow: column;
+  background: #f3f3f3;
   padding: 1rem 0;
-  background-color: gray;
   color: #ebd98b; }
 
 .logo {
@@ -110,10 +110,10 @@ a {
   grid-auto-flow: row; }
 
 .content {
-  align-self: stretch;
   background: rgba(0, 0, 0, 0.8);
   padding: 1rem 0 0 2rem;
-  color: #f3f3f3; }
+  color: #f3f3f3;
+  height: auto; }
 
 .item {
   display: grid;
@@ -164,7 +164,8 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 
   .item {
-    display: grid; } }
+    grid-column: auto;
+    grid-row: auto; } }
 @media all and (max-width: 300px) {
   .hero {
     display: grid;
