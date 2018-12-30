@@ -133,14 +133,7 @@ aside {
 
 
 .header {
-	color: #ffff;
-	text-transform: capitalize;
-	text-align: center;
-}
-
-.header {
 	display: grid;
-	align-items: center;
 	grid-area: header;
 	background-color: green;
 }
@@ -162,6 +155,7 @@ aside {
 .mid-sec {
 	grid-area: mid;
 	width: 70vw;
+	height: 70vh;
 	padding: 2rem;
 }
 
@@ -179,18 +173,17 @@ aside {
 								// footer section
 // ==============================================
 
-
-.footer {
-	grid-area: footer;
-	background-color: skyblue;
-}
-
-
 .header,
 .footer {
 	display: grid;
 	align-items: center;
+	justify-content: center;
 	text-transform: capitalize;
+}
+
+.footer {
+	grid-area: footer;
+	background-color: skyblue;
 }
 
 
@@ -227,7 +220,6 @@ aside {
 			}
 			.mid-sec {
 				grid-area: mid;
-				width: 100vw;
 			}
 			.footer {
 				grid-area: footer;
@@ -237,8 +229,7 @@ aside {
 			.right-nav,
 			.left-nav {
 				display: grid;
-				align-content: center !important;
-				width: auto;
+				width: 100vw;
 			}
 	}
 }

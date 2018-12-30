@@ -100,13 +100,7 @@ aside {
   grid-template-areas: "header header header" "left 	mid 	right" "footer footer footer"; }
 
 .header {
-  color: #ffff;
-  text-transform: capitalize;
-  text-align: center; }
-
-.header {
   display: grid;
-  align-items: center;
   grid-area: header;
   background-color: green; }
 
@@ -117,21 +111,23 @@ aside {
 .mid-sec {
   grid-area: mid;
   width: 70vw;
+  height: 70vh;
   padding: 2rem; }
 
 .right-nav {
   grid-area: right;
   background-color: tomato; }
 
-.footer {
-  grid-area: footer;
-  background-color: skyblue; }
-
 .header,
 .footer {
   display: grid;
   align-items: center;
+  justify-content: center;
   text-transform: capitalize; }
+
+.footer {
+  grid-area: footer;
+  background-color: skyblue; }
 
 @media all and (max-width: 900px) {
   :root {
@@ -148,15 +144,13 @@ aside {
     .container .right-nav {
       grid-area: right; }
     .container .mid-sec {
-      grid-area: mid;
-      width: 100vw; }
+      grid-area: mid; }
     .container .footer {
       grid-area: footer;
       text-align: center; }
     .container .right-nav,
     .container .left-nav {
       display: grid;
-      align-content: center !important;
-      width: auto; } }
+      width: 100vw; } }
 
 /*# sourceMappingURL=main.css.map */
