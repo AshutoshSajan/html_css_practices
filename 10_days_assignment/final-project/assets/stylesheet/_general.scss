@@ -1,0 +1,78 @@
+:root {
+	font-size: 10px;
+}
+
+$primary-clr:(#333);
+$secondry-clr:(#666);
+$tirtiory-clr:(#999);
+$bg-clr:(#bababa);
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3.5rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2.5rem;
+}
+
+h5 {
+	font-size: 2rem;
+}
+
+h6 {
+	font-size: 1.7rem;
+}
+
+p {
+	font-size: 1.6rem;
+	color: $primary-clr;
+}
+
+a {
+	color: #333;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, span {
+	margin-bottom: 2rem;
+	text-transform: capitalize;
+	color: $primary-clr;
+}
+
+p {
+	line-height: 1.3;
+}
+
+button {
+	outline: 0;
+	background-color: transparent;
+}
+
+b, strong {
+	font-weight: bold;
+	color: black;
+}
+
+i, em {
+	font-style: italic;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
