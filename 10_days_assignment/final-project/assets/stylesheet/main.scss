@@ -10,7 +10,7 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(11, 1fr);
+	grid-template-rows: repeat(10, 1fr);
 	grid-template-areas: 
 		"item1 			item1 			item2 		item2"
 		"item1 			item1 			item2 		item2"
@@ -18,8 +18,8 @@
 		"item6			item7 			item8 		item9"
 		"item10 		item10 			item11 		item11"
 		"item12 		item12			item13 		item13"
-		"item14 		item14			item15 		item15"
-		"item14 		item14			item15 		item15"
+		"item14 		item14			item15 		item16"
+		"item14 		item14			item15 		item16"
 		"map				map					map				map"
 		"footer 		footer 			footer 		footer";
 
@@ -27,24 +27,35 @@
 		display: grid;
 		align-items: center;
 		padding: 3rem;
-	}
-	.box1 {
-		background: url("../../assets/media/home-img.jpg");
 		background-size: cover;
-		background-position: 20% 50%;
+		background-repeat: no-repeat;
+	}
+
+		// ===============================================
+									// box 1
+		// ===============================================
+
+
+	.box1 {
+		background: url("../../assets/media/home-img.jpg") 30% 50%;
 		grid-area: item1;
 
 		.nav-list {
 			display: flex;
 			position: absolute;
 			top: 0;
-			width: 100%;
+			left: 0;
+			width: 100vw;
 			justify-content: space-around;
 			align-items: center;
 			line-height: 3;
+			padding: 0 3rem;
+
+			i {
+				font-size: 2rem;
+			}
 			
 			h4 {
-
 				margin: 0 30vw 0 6vw;
 			}
 
@@ -60,19 +71,27 @@
 		}
 	}
 
+		// ===============================================
+									// box 2
+		// ===============================================
+
 	.box2 {
 		grid-area: item2;
 		padding: 32vh 3rem;
 		background-color: rgba(255,228,196, 0.6);
-
-		.btn {
-			margin-top: 2rem;
-			width: 10rem;
-			padding: 0.8rem 0;
-			border-radius: 40px;
-			border: 1px solid #333;
-		}
 	}
+
+	.btn {
+		margin-top: 2rem;
+		width: 10rem;
+		padding: 0.8rem 0;
+		border-radius: 40px;
+		border: 1px solid #333;
+	}
+
+		// ===============================================
+									// box 3
+		// ===============================================
 
 	.box3 {
 		grid-area: item3;
@@ -82,12 +101,24 @@
 		}
 	}
 
+
+		// ===============================================
+									// box 4
+		// ===============================================
+
+
 	.box4 {
-		background: url(../../assets/media/about-img.jpg) 50%;
-		background-size: cover;
+		grid-area: item4;
+		background: url(../../assets/media/about-img.jpg) 50% 15%;
 	}
 
+
+		// ===============================================
+									// box 5
+		// ===============================================
+
 	// my skill section
+
 	.box5 {
 		grid-area: item5;
 		background-color: rgba(255,140,0,0.6);
@@ -120,6 +151,7 @@
 			text-transform: uppercase;
 		}
 	}
+
 	
 	// social skills
 
@@ -133,21 +165,39 @@
 		}
 	}
 
+		// ===============================================
+									// box 6
+		// ===============================================
+
 	.box6 {
 		grid-area: item6;
 		background-color: rgba(255,140,0,0.6);
 	}
+
+		// ===============================================
+									// box 7
+		// ===============================================
+
 
 	.box7 {
 		grid-area: item7;
 		background-color: rgba(255, 87, 34, 0.9);
 	}
 
+		// ===============================================
+									// box 8
+		// ===============================================
+
 	.box8 {
 		grid-area: item8;
 		color: #fff;
 		background-color: rgba(33, 33, 33, 1);
 	}
+
+
+		// ===============================================
+									// box 9
+		// ===============================================
 
 	.box9 {
 		grid-area: item9;
@@ -158,20 +208,233 @@
 		}
 	}
 
-	.box10 {
+		// ===============================================
+									// box 10
+		// ===============================================
 
+	.box10 {
+		grid-area: item10;
+		background: url(../../assets/media/experience-img.jpg) 50% 15%;
 	}
+
+		// ===============================================
+									// box 11
+		// ===============================================
+
 	.box11 {
 		grid-area: item11;
-		color: #fff;
-		.experience-details{
+		background-color: rgba(255, 87, 34, 0.9);
+		
+		h2, h6, p {
+			color: #fff;
+		}
+	}
+	.experience-details {
 			display: flex;
 			align-items: baseline;
-
+		
 			i {
 				font-size: 1.8rem;
+			}
+
+			h5, i {
+				margin-right: 1rem;
+				color: #fff;
+			}
+
+			p {
+				display: flex;
+				margin-left: 3.5rem;
+				align-items: flex-start;
+			}
+		}
+
+		// ===============================================
+									// box 12
+		// ===============================================
+
+	.box12 {
+		grid-area: item12;
+		background-color: rgba(255,140,0,0.6);
+		h2, h6, p {
+			color: #fff;
+		}
+	}
+
+		// ===============================================
+									// box 13
+		// ===============================================
+
+	.box13 {
+		grid-area: item13;
+		background: url(../../assets/media/education-img.jpg) 50% 70%;
+	}
+	
+		// ===============================================
+									// box 14
+		// ===============================================
+
+	
+	.box14 {
+		grid-area: item14;
+		background-color: rgba(255, 87, 34, 0.8);
+		textarea::-webkit-input-placeholder {
+		color: #fff;
+		}
+
+		input::-webkit-input-placeholder {
+		color: #fff;
+		}
+
+		input, textarea {
+			border-bottom: 2px solid rgba(250,148,70,1);
+			background: transparent;
+			font-size: 2rem;
+			padding: 0.6rem 1rem;
+			width: 40vw;
+		}
+		.btn {
+			background: #fff;
+			width: 15vw;
+			border: none;
+		}
+
+		h2, p {
+			color: #fff;
+		}
+	}
+
+		// ===============================================
+									// box 15
+		// ===============================================
+
+	.box15 {
+		grid-area: item15;
+		background: url(../../assets/media/contact-img.jpg) 50% 70%;
+	}
+
+		// ===============================================
+									// box 16
+		// ===============================================
+
+	.box16 {
+		grid-area: item16;
+		background-color: rgba(33, 33, 33, 1);
+		i {
+			font-size: 2rem;
+			margin-right: 2rem;
+		}
+	
+		.contact-details {
+			display: flex;
+
+			a {
+				color: rgba(255,140,0,0.8);
+			}
+		}
+		h2, p {
+			color: #fff;
+		} 
+	}
+
+		// ===============================================
+									// box 17
+		// ===============================================
+
+	.box17 {
+		grid-area: map;
+		background-color: rgba(255, 87, 34, 0.8);
+		iframe {
+			margin: 0 auto;
+		}
+	}
+
+		// ===============================================
+									// footer
+		// ===============================================
+
+
+	.footer {
+		grid-area: footer;
+		align-items: center;
+
+		small {
+			display: block;
+			text-align: center;
+			font-size: 2.2rem;
+			color: $secondry-clr;
+			text-transform: capitalize;
+			a {
+				color: rgba(255, 87, 34, 0.8);
+				font-size: 2.2rem;
+			}
+		}
+		.social-links {
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			i {
+				font-size: 3rem;
+				margin: 0 4rem;
+				color: $secondry-clr;
+				align-content: baseline;
+				cursor: pointer;
 			}
 		}
 	}
 }
 
+
+// ===============================================
+									// media query
+// ===============================================
+
+@media all and (max-width: 900px) {
+	:root {
+		font-size: 5px;
+	}
+	.grid-container {
+		min-height: 100vh;
+		grid-auto-flow: row;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(17, 1fr);
+		grid-template-areas: 
+			"item1"
+			"item2"
+			"item3"
+			"item4"
+			"item5"
+			"item6"
+			"item7"
+			"item8"
+			"item9"
+			"item10"
+			"item11"
+			"item12"
+			"item13"
+			"item14"
+			"item15"
+			"item16"
+			"item17"
+			"map"
+			"footer";
+	}
+
+	.box {
+		display: block;
+		width: 100%;
+		}
+		.box1 {
+			.nav-list {
+				padding: 0; 
+				justify-content: space-between;
+				.links a {
+					display: none;
+				}
+				li h4 {
+					display: inline-block;
+					margin: 0;
+			}
+		}
+	}
+}

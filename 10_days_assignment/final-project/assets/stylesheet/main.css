@@ -92,6 +92,9 @@ h5 {
 h6 {
   font-size: 1.7rem; }
 
+span {
+  font-weight: 600; }
+
 p {
   font-size: 1.6rem;
   color: #333; }
@@ -110,8 +113,10 @@ p {
   line-height: 1.3; }
 
 button {
+  font-size: 1.6rem;
   outline: 0;
-  background-color: transparent; }
+  background-color: transparent;
+  text-transform: capitalize; }
 
 b, strong {
   font-weight: bold;
@@ -124,6 +129,17 @@ img {
   width: 100%;
   height: 100%; }
 
+input, textarea, button {
+  display: block;
+  margin: 2rem 0;
+  border: none;
+  outline: 0;
+  color: #333; }
+
+::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: #333; }
+
 /*============================================*/
 /*main css*/
 /*============================================*/
@@ -132,25 +148,29 @@ img {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(11, 1fr);
-  grid-template-areas: "item1 			item1 			item2 		item2" "item1 			item1 			item2 		item2" "item3 			item3 			item4 		item5" "item6			item7 			item8 		item9" "item10 		item10 			item11 		item11" "item12 		item12			item13 		item13" "item14 		item14			item15 		item15" "item14 		item14			item15 		item15" "map				map					map				map" "footer 		footer 			footer 		footer"; }
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas: "item1 			item1 			item2 		item2" "item1 			item1 			item2 		item2" "item3 			item3 			item4 		item5" "item6			item7 			item8 		item9" "item10 		item10 			item11 		item11" "item12 		item12			item13 		item13" "item14 		item14			item15 		item16" "item14 		item14			item15 		item16" "map				map					map				map" "footer 		footer 			footer 		footer"; }
   .grid-container .box {
     display: grid;
     align-items: center;
-    padding: 3rem; }
-  .grid-container .box1 {
-    background: url("../../assets/media/home-img.jpg");
+    padding: 3rem;
     background-size: cover;
-    background-position: 20% 50%;
+    background-repeat: no-repeat; }
+  .grid-container .box1 {
+    background: url("../../assets/media/home-img.jpg") 30% 50%;
     grid-area: item1; }
     .grid-container .box1 .nav-list {
       display: flex;
       position: absolute;
       top: 0;
-      width: 100%;
+      left: 0;
+      width: 100vw;
       justify-content: space-around;
       align-items: center;
-      line-height: 3; }
+      line-height: 3;
+      padding: 0 3rem; }
+      .grid-container .box1 .nav-list i {
+        font-size: 2rem; }
       .grid-container .box1 .nav-list h4 {
         margin: 0 30vw 0 6vw; }
       .grid-container .box1 .nav-list a {
@@ -163,19 +183,19 @@ img {
     grid-area: item2;
     padding: 32vh 3rem;
     background-color: rgba(255, 228, 196, 0.6); }
-    .grid-container .box2 .btn {
-      margin-top: 2rem;
-      width: 10rem;
-      padding: 0.8rem 0;
-      border-radius: 40px;
-      border: 1px solid #333; }
+  .grid-container .btn {
+    margin-top: 2rem;
+    width: 10rem;
+    padding: 0.8rem 0;
+    border-radius: 40px;
+    border: 1px solid #333; }
   .grid-container .box3 {
     grid-area: item3; }
     .grid-container .box3 a {
       color: rgba(231, 76, 60, 0.6); }
   .grid-container .box4 {
-    background: url(../../assets/media/about-img.jpg) 50%;
-    background-size: cover; }
+    grid-area: item4;
+    background: url(../../assets/media/about-img.jpg) 50% 15%; }
   .grid-container .box5 {
     grid-area: item5;
     background-color: rgba(255, 140, 0, 0.6); }
@@ -215,13 +235,118 @@ img {
     color: #333; }
     .grid-container .box9 h6, .grid-container .box9 p, .grid-container .box9 i {
       color: #333; }
+  .grid-container .box10 {
+    grid-area: item10;
+    background: url(../../assets/media/experience-img.jpg) 50% 15%; }
   .grid-container .box11 {
     grid-area: item11;
-    color: #fff; }
-    .grid-container .box11 .experience-details {
+    background-color: rgba(255, 87, 34, 0.9); }
+    .grid-container .box11 h2, .grid-container .box11 h6, .grid-container .box11 p {
+      color: #fff; }
+  .grid-container .experience-details {
+    display: flex;
+    align-items: baseline; }
+    .grid-container .experience-details i {
+      font-size: 1.8rem; }
+    .grid-container .experience-details h5, .grid-container .experience-details i {
+      margin-right: 1rem;
+      color: #fff; }
+    .grid-container .experience-details p {
       display: flex;
-      align-items: baseline; }
-      .grid-container .box11 .experience-details i {
-        font-size: 1.8rem; }
+      margin-left: 3.5rem;
+      align-items: flex-start; }
+  .grid-container .box12 {
+    grid-area: item12;
+    background-color: rgba(255, 140, 0, 0.6); }
+    .grid-container .box12 h2, .grid-container .box12 h6, .grid-container .box12 p {
+      color: #fff; }
+  .grid-container .box13 {
+    grid-area: item13;
+    background: url(../../assets/media/education-img.jpg) 50% 70%; }
+  .grid-container .box14 {
+    grid-area: item14;
+    background-color: rgba(255, 87, 34, 0.8); }
+    .grid-container .box14 textarea::-webkit-input-placeholder {
+      color: #fff; }
+    .grid-container .box14 input::-webkit-input-placeholder {
+      color: #fff; }
+    .grid-container .box14 input, .grid-container .box14 textarea {
+      border-bottom: 2px solid #fa9446;
+      background: transparent;
+      font-size: 2rem;
+      padding: 0.6rem 1rem;
+      width: 40vw; }
+    .grid-container .box14 .btn {
+      background: #fff;
+      width: 15vw;
+      border: none; }
+    .grid-container .box14 h2, .grid-container .box14 p {
+      color: #fff; }
+  .grid-container .box15 {
+    grid-area: item15;
+    background: url(../../assets/media/contact-img.jpg) 50% 70%; }
+  .grid-container .box16 {
+    grid-area: item16;
+    background-color: #212121; }
+    .grid-container .box16 i {
+      font-size: 2rem;
+      margin-right: 2rem; }
+    .grid-container .box16 .contact-details {
+      display: flex; }
+      .grid-container .box16 .contact-details a {
+        color: rgba(255, 140, 0, 0.8); }
+    .grid-container .box16 h2, .grid-container .box16 p {
+      color: #fff; }
+  .grid-container .box17 {
+    grid-area: map;
+    background-color: rgba(255, 87, 34, 0.8); }
+    .grid-container .box17 iframe {
+      margin: 0 auto; }
+  .grid-container .footer {
+    grid-area: footer;
+    align-items: center; }
+    .grid-container .footer small {
+      display: block;
+      text-align: center;
+      font-size: 2.2rem;
+      color: #666;
+      text-transform: capitalize; }
+      .grid-container .footer small a {
+        color: rgba(255, 87, 34, 0.8);
+        font-size: 2.2rem; }
+    .grid-container .footer .social-links {
+      display: flex;
+      width: 100%;
+      justify-content: center; }
+      .grid-container .footer .social-links i {
+        font-size: 3rem;
+        margin: 0 4rem;
+        color: #666;
+        align-content: baseline;
+        cursor: pointer; }
+
+@media all and (max-width: 900px) {
+  :root {
+    font-size: 5px; }
+
+  .grid-container {
+    min-height: 100vh;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(17, 1fr);
+    grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "item9" "item10" "item11" "item12" "item13" "item14" "item15" "item16" "item17" "map" "footer"; }
+
+  .box {
+    display: block;
+    width: 100%; }
+
+  .box1 .nav-list {
+    padding: 0;
+    justify-content: space-between; }
+    .box1 .nav-list .links a {
+      display: none; }
+    .box1 .nav-list li h4 {
+      display: inline-block;
+      margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */
