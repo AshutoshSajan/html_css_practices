@@ -10,7 +10,7 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(10, 1fr);
+	grid-template-rows: repeat (minmax(300px, auto))(10, 1fr);
 	grid-template-areas: 
 		"item1 			item1 			item2 		item2"
 		"item1 			item1 			item2 		item2"
@@ -37,8 +37,9 @@
 
 
 	.box1 {
-		background: url("../../assets/media/home-img.jpg") 30% 50%;
+		background: url("../../assets/media/home-img.jpg") 40% 50%;
 		grid-area: item1;
+		background-size: cover;
 
 		.nav-list {
 			display: flex;
@@ -49,14 +50,14 @@
 			justify-content: space-around;
 			align-items: center;
 			line-height: 3;
-			padding: 0 3rem;
+			padding: 0 2%;
 
 			i {
 				font-size: 2rem;
 			}
 			
 			h4 {
-				margin: 0 30vw 0 6vw;
+				margin: 0 30vw 0 7vw;
 			}
 
 			a {
@@ -83,10 +84,10 @@
 
 	.btn {
 		margin-top: 2rem;
-		width: 10rem;
+		width: 14rem;
 		padding: 0.8rem 0;
 		border-radius: 40px;
-		border: 1px solid #333;
+		border: 2px solid #333;
 	}
 
 		// ===============================================
@@ -131,6 +132,7 @@
 			display: flex;
 			justify-content: space-between;
 			border-bottom: 3px solid black;
+			margin-bottom: 2rem;
 		}
 
 		.skill-bar1 {
@@ -159,6 +161,7 @@
 		text-align: center;
 		i {
 			font-size: 2.5rem;
+			margin-bottom: 2rem;
 		}
 		h6, p, i {
 			color: #f3f3f3;
@@ -310,7 +313,7 @@
 
 	.box15 {
 		grid-area: item15;
-		background: url(../../assets/media/contact-img.jpg) 50% 70%;
+		background: url(../../assets/media/contact-img.jpg) 50% 30%;
 	}
 
 		// ===============================================
@@ -329,10 +332,11 @@
 			display: flex;
 
 			a {
+				margin-bottom: 2rem;
 				color: rgba(255,140,0,0.8);
 			}
 		}
-		h2, p {
+		h2, p, i {
 			color: #fff;
 		} 
 	}
@@ -345,7 +349,8 @@
 		grid-area: map;
 		background-color: rgba(255, 87, 34, 0.8);
 		iframe {
-			margin: 0 auto;
+			margin-left: 50%;
+			transform: translateX(-50%);
 		}
 	}
 
@@ -357,7 +362,7 @@
 	.footer {
 		grid-area: footer;
 		align-items: center;
-
+		padding: 8rem 0;
 		small {
 			display: block;
 			text-align: center;
@@ -373,9 +378,11 @@
 			display: flex;
 			width: 100%;
 			justify-content: center;
+			padding: 3rem 0;
+
 			i {
 				font-size: 3rem;
-				margin: 0 4rem;
+				margin: 0 3vw;
 				color: $secondry-clr;
 				align-content: baseline;
 				cursor: pointer;
@@ -389,15 +396,16 @@
 									// media query
 // ===============================================
 
+
 @media all and (max-width: 900px) {
 	:root {
-		font-size: 5px;
+		font-size: 6px;
 	}
+
 	.grid-container {
-		min-height: 100vh;
-		grid-auto-flow: row;
+		height: auto;
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(17, 1fr);
+		grid-template-rows: repeat (minmax(300px, auto))(17,1fr);
 		grid-template-areas: 
 			"item1"
 			"item2"
@@ -418,23 +426,48 @@
 			"item17"
 			"map"
 			"footer";
-	}
 
-	.box {
-		display: block;
-		width: 100%;
+		.box {
+			display: grid;
+			width: 100vw;
+			height: auto;
+			background-size: cover;
 		}
 		.box1 {
 			.nav-list {
-				padding: 0; 
 				justify-content: space-between;
+
 				.links a {
 					display: none;
 				}
+
 				li h4 {
 					display: inline-block;
 					margin: 0;
+				}
 			}
+		}
+
+		.box14 {
+			fieldset input, textarea {
+				width: 60vw;
+			}
+		}
+		.box17 {
+			iframe {
+				height: 50vw;
+				width: 100%;
+			}
+		}
+
+		.bg-img-box{
+			height: 50vh;
+			width: 100%;
+		}
+
+		.footer {
+			min-height: 30vh;
+			width: 100%;
 		}
 	}
 }

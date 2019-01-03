@@ -148,7 +148,7 @@ input, textarea, button {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat minmax(300px, auto) 10, 1fr;
   grid-template-areas: "item1 			item1 			item2 		item2" "item1 			item1 			item2 		item2" "item3 			item3 			item4 		item5" "item6			item7 			item8 		item9" "item10 		item10 			item11 		item11" "item12 		item12			item13 		item13" "item14 		item14			item15 		item16" "item14 		item14			item15 		item16" "map				map					map				map" "footer 		footer 			footer 		footer"; }
   .grid-container .box {
     display: grid;
@@ -157,8 +157,9 @@ input, textarea, button {
     background-size: cover;
     background-repeat: no-repeat; }
   .grid-container .box1 {
-    background: url("../../assets/media/home-img.jpg") 30% 50%;
-    grid-area: item1; }
+    background: url("../../assets/media/home-img.jpg") 40% 50%;
+    grid-area: item1;
+    background-size: cover; }
     .grid-container .box1 .nav-list {
       display: flex;
       position: absolute;
@@ -168,11 +169,11 @@ input, textarea, button {
       justify-content: space-around;
       align-items: center;
       line-height: 3;
-      padding: 0 3rem; }
+      padding: 0 2%; }
       .grid-container .box1 .nav-list i {
         font-size: 2rem; }
       .grid-container .box1 .nav-list h4 {
-        margin: 0 30vw 0 6vw; }
+        margin: 0 30vw 0 7vw; }
       .grid-container .box1 .nav-list a {
         text-transform: uppercase; }
       .grid-container .box1 .nav-list .active {
@@ -185,10 +186,10 @@ input, textarea, button {
     background-color: rgba(255, 228, 196, 0.6); }
   .grid-container .btn {
     margin-top: 2rem;
-    width: 10rem;
+    width: 14rem;
     padding: 0.8rem 0;
     border-radius: 40px;
-    border: 1px solid #333; }
+    border: 2px solid #333; }
   .grid-container .box3 {
     grid-area: item3; }
     .grid-container .box3 a {
@@ -204,7 +205,8 @@ input, textarea, button {
     .grid-container .box5 .skill-bar {
       display: flex;
       justify-content: space-between;
-      border-bottom: 3px solid black; }
+      border-bottom: 3px solid black;
+      margin-bottom: 2rem; }
     .grid-container .box5 .skill-bar1 {
       -webkit-border-image: linear-gradient(to right, black 80%, white 20%) 27; }
     .grid-container .box5 .skill-bar2 {
@@ -217,7 +219,8 @@ input, textarea, button {
   .grid-container .col {
     text-align: center; }
     .grid-container .col i {
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      margin-bottom: 2rem; }
     .grid-container .col h6, .grid-container .col p, .grid-container .col i {
       color: #f3f3f3; }
   .grid-container .box6 {
@@ -284,7 +287,7 @@ input, textarea, button {
       color: #fff; }
   .grid-container .box15 {
     grid-area: item15;
-    background: url(../../assets/media/contact-img.jpg) 50% 70%; }
+    background: url(../../assets/media/contact-img.jpg) 50% 30%; }
   .grid-container .box16 {
     grid-area: item16;
     background-color: #212121; }
@@ -294,17 +297,20 @@ input, textarea, button {
     .grid-container .box16 .contact-details {
       display: flex; }
       .grid-container .box16 .contact-details a {
+        margin-bottom: 2rem;
         color: rgba(255, 140, 0, 0.8); }
-    .grid-container .box16 h2, .grid-container .box16 p {
+    .grid-container .box16 h2, .grid-container .box16 p, .grid-container .box16 i {
       color: #fff; }
   .grid-container .box17 {
     grid-area: map;
     background-color: rgba(255, 87, 34, 0.8); }
     .grid-container .box17 iframe {
-      margin: 0 auto; }
+      margin-left: 50%;
+      transform: translateX(-50%); }
   .grid-container .footer {
     grid-area: footer;
-    align-items: center; }
+    align-items: center;
+    padding: 8rem 0; }
     .grid-container .footer small {
       display: block;
       text-align: center;
@@ -317,36 +323,46 @@ input, textarea, button {
     .grid-container .footer .social-links {
       display: flex;
       width: 100%;
-      justify-content: center; }
+      justify-content: center;
+      padding: 3rem 0; }
       .grid-container .footer .social-links i {
         font-size: 3rem;
-        margin: 0 4rem;
+        margin: 0 3vw;
         color: #666;
         align-content: baseline;
         cursor: pointer; }
 
 @media all and (max-width: 900px) {
   :root {
-    font-size: 5px; }
+    font-size: 6px; }
 
   .grid-container {
-    min-height: 100vh;
-    grid-auto-flow: row;
+    height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(17, 1fr);
+    grid-template-rows: repeat minmax(300px, auto) 17, 1fr;
     grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "item9" "item10" "item11" "item12" "item13" "item14" "item15" "item16" "item17" "map" "footer"; }
-
-  .box {
-    display: block;
-    width: 100%; }
-
-  .box1 .nav-list {
-    padding: 0;
-    justify-content: space-between; }
-    .box1 .nav-list .links a {
-      display: none; }
-    .box1 .nav-list li h4 {
-      display: inline-block;
-      margin: 0; } }
+    .grid-container .box {
+      display: grid;
+      width: 100vw;
+      height: auto;
+      background-size: cover; }
+    .grid-container .box1 .nav-list {
+      justify-content: space-between; }
+      .grid-container .box1 .nav-list .links a {
+        display: none; }
+      .grid-container .box1 .nav-list li h4 {
+        display: inline-block;
+        margin: 0; }
+    .grid-container .box14 fieldset input, .grid-container .box14 textarea {
+      width: 60vw; }
+    .grid-container .box17 iframe {
+      height: 50vw;
+      width: 100%; }
+    .grid-container .bg-img-box {
+      height: 50vh;
+      width: 100%; }
+    .grid-container .footer {
+      min-height: 30vh;
+      width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
