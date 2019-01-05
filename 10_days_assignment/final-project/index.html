@@ -1,182 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>final project</title>
-	
-	<!-- css stylesheet -->
-	<link rel="stylesheet" href="assets/stylesheet/main.css">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>final project</title>
+		
+		<!-- css stylesheet -->
+		<link rel="stylesheet" href="assets/stylesheet/main.css">
 
-	<!-- font awesome link -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<!-- font awesome link -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+		<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
-</head>
-<body>
-	<main>
-		<div class="grid-container">
-			<div class="box box1 bg-img-box">
-				<header>
-					<nav class="nav-bar">
-						<ul class="nav-list">
-							<li class="list"><h4>stimulus</h4></li>
-							<li class="list links"><a class="active" href="#">home</a></li>
-							<li class="list links"><a href="#">about me</a></li>
-							<li class="list links"><a href="#">experience</a></li>
-							<li class="list links"><a href="#">testimonial</a></li>
-							<li class="list links"><a href="#">contact</a></li>
-							<i class="fas fa-bars"></i>
+	</head>
+	<body>
+		<!-- primary header -->
+		<header class="header">
+			<nav class="nav">
+				<a href="#"><h1 class="logo">stimulus</h1></a>
+				<input id="toggle" type="checkbox" />
+				<label class="label" for="toggle"><i class="fas fa-bars"></i></label>
+				<ul class="nav__menu">
+					<li><a class="active nav__link" href="#">home</a></li>
+					<li><a class="nav__link" href="#">about me</a></li>
+					<li><a class="nav__link" href="#">experience</a></li>
+					<li><a class="nav__link" href="#">testimonial</a></li>
+					<li><a class="nav__link" href="#">contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="grid-container">
+
+				<!-- box1 -->
+				<section class="box box1 bg-img-box"></section>
+
+				<!-- box2 -->
+				<section class="box box2">
+					<p>welcome to my website</p>
+					<h1>hello, i am <strong>stimulus</strong> currently based in New York city.</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam omnis commodi cupiditate debitis accusantium nesciunt iure veniam, quia iste molestiae, earum dignissimos, et necessitatibus aliquid? Laboriosam error magnam, earum temporibus.</p>
+					<button class="btn">get started</button>
+				</section>
+
+				<!-- box3 -->
+				<section class="box box3">
+					<h2>donec auctor</h2>
+					<a href="#">Lorem ipsum dolor sit amet</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia impedit dolorum numquam maiores illo maxime. dicta neque soluta quas sit rerum tempore recusandae veritatis? Ipsam, aperiam, velit. Deleniti, quas eaque</p>
+					<p>dicta neque soluta quas sit rerum tempore recusandae veritatis? Ipsam, aperiam, velit. Deleniti, quas eaque.dicta neque soluta quas sit rerum tempore recusandae veritatis? Ipsam, aperiam, velit. Deleniti, quas eaque</p>
+				</section>
+
+				<!-- box4 -->
+				<section class="box box4 bg-img-box"></section>
+
+				<!-- box5 my skill section -->
+				<section class="box box5">
+					<h2>my skills</h2>
+					<h5>photoshop. html css js. web design</h5>
+					<div class="skill-bar skill-bar1"><h6>frontend design</h6><figure>90%</figure></div>
+					<div class="skill-bar skill-bar2"><h6>backend processing</h6><figure>70%</figure></div>
+					<div class="skill-bar skill-bar3"><span>html & css3</span><figure>80%</figure></div>
+				</section>
+
+				<!-- interface design section box6 -->
+				<section class="box box6 col">
+					<i class="fas fa-desktop"></i>
+					<h6>interface design</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate sequi molestias, quod voluptatibus incidunt aliquid et atque deleniti.</p>
+				</section>
+
+				<!-- media strategy section -->
+				<section class="box box7 col">
+					<i class="fas fa-paper-plane"></i>
+					<h6>media strategy</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate sequi molestias, quod voluptatibus incidunt aliquid et atque deleniti.</p>
+				</section>
+
+				<!-- mobile app section -->
+				<section class="box box8 col">
+					<i class="fas fa-th"></i>
+					<h6>mobile app</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate sequi molestias, quod voluptatibus incidunt aliquid et atque deleniti.</p>
+				</section>
+
+				<!-- coding section -->
+				<section class="box box9 col">
+					<i class="fab fa-html5"></i>
+					<h6>coding</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate sequi molestias, quod voluptatibus incidunt aliquid et atque deleniti.</p>
+				</section>
+
+				<!-- grid area10 img -->
+				<section class="box box10 bg-img-box"></section>
+
+				<!-- experience section -->
+				<section class="box box11">
+					<h2>my experiences</h2>
+					<h6>previous companies and my tasks</h6>
+					<div class="experience-details">
+						<i class="fas fa-laptop"></i>
+						<h5>graphic designer</h5>
+						<span>2014 july-2015 sep</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<div class="experience-details">
+						<i class="fas fa-laptop"></i>
+						<h5>web designer</h5><span>2014 july-2015 sep</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</section>
+
+				<!-- box12 -->
+				<section class="box box12">				
+					<h2>my experiences</h2>
+					<h6>previous companies and my tasks</h6>
+					<div class="experience-details">
+						<i class="fas fa-laptop"></i>
+						<h5>graphic designer</h5>
+						<span>2014 july-2015 sep</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<div class="experience-details">
+						<i class="fas fa-laptop"></i>
+						<h5>web designer</h5>
+						<span>2014 july-2015 sep</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</section>
+				
+				<!-- box13 -->
+				<section class="box box13 bg-img-box"></section>
+
+				<!-- form section -->
+				<section class="box box14">
+					<h2>say hello...</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<form action="login">
+						<fieldset>
+							<input type="text" placeholder="your name">
+							<input type="text" placeholder="your email">
+							<textarea name="textarea" id="" cols="30" rows="10" placeholder="write your message..."></textarea>
+							<button class="btn" type="submit">send</button>
+						</fieldset>
+					</form>
+				</section>
+
+				<!-- box15 -->
+				<section class="box box15 bg-img-box"></section>
+				
+				<!-- box16 contact section -->
+				<section class="box box16">
+					<h2>visit my office</h2>
+					<p>456 new street 22000, new york city, USA</p>
+					<h2>contact.</h2>
+					<div class="contact-details">
+						<i class="fas fa-phone"></i>
+						<p>01-0110-0220</p>
+					</div>
+					<div class="contact-details">
+						<i class="far fa-envelope"></i>
+						<a href="#">hello@company.co</a>
+					</div>
+					<div class="contact-details">
+						<i class="fas fa-globe-asia"></i>
+						<a href="#">company.co</a>
+					</div>
+				</section>
+
+				<!-- map section -->
+				<section class="box box17">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6752.357061554738!2d76.36477582735449!3d32.19941967460084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b522c7cd8b85b%3A0x9d68653444d4c03a!2sRakkar%2C+Himachal+Pradesh!5e0!3m2!1sen!2sin!4v1546493741342" width="90%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</section>
+
+				<!-- primary footer -->
+				<footer class="box footer">
+					<small>copyright &copy; 2016 your company | design <a href="#">templatemo</a></small>
+
+					<nav class="social-links">
+						<ul>
+							<li><i class="fab fa-facebook-f"></i></li>
+							<li><i class="fab fa-twitter"></i></li>
+							<li><i class="fab fa-google-plus-g"></i></li>
+							<li><i class="fab fa-dribbble"></i></li>
+							<li><i class="fab fa-linkedin-in"></i></li>
 						</ul>
 					</nav>
-				</header>
+				</footer>
 			</div>
-			<div class="box box2">
-				<p>welcome to my website</p>
-				<h1>hello, i am <strong>stimulus</strong> currently based in New York city.</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam omnis commodi cupiditate debitis accusantium nesciunt iure veniam, quia iste molestiae, earum dignissimos, et necessitatibus aliquid? Laboriosam error magnam, earum temporibus.</p>
-				<button class="btn">get started</button>
-			</div>
-			<div class="box box3">
-				<h2>donec auctor</h2>
-				<a href="#">Lorem ipsum dolor sit amet</a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia impedit dolorum numquam maiores illo maxime. dicta neque soluta quas sit rerum tempore recusandae veritatis? Ipsam, aperiam, velit. Deleniti, quas eaque</p>
-				<p>dicta neque soluta quas sit rerum tempore recusandae veritatis? Ipsam, aperiam, velit. Deleniti, quas eaque.dicta neque soluta quas sit rerum tempore recusandae veritatis? Ipsam, aperiam, velit. Deleniti, quas eaque</p>
-			</div>
-			<div class="box box4 bg-img-box">
-				
-			</div>
-
-			<!-- my skill section -->
-			<div class="box box5">
-				<h2>my skills</h2>
-				<h5>photoshop. html css js. web design</h5>
-				<div class="skill-bar skill-bar1"><h6>frontend design</h6><figure>90%</figure></div>
-				<div class="skill-bar skill-bar2"><h6>backend processing</h6><figure>70%</figure></div>
-				<div class="skill-bar skill-bar3"><span>html & css3</span><figure>80%</figure></div>
-			</div>
-
-			<!-- interface design section -->
-			<div class="box box6 col">
-				<i class="fas fa-desktop"></i>
-				<h6>interface design</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate sequi molestias, quod voluptatibus incidunt aliquid et atque deleniti.</p>
-			</div>
-
-			<!-- media strategy section -->
-			<div class="box box7 col">
-				<i class="fas fa-paper-plane"></i>
-				<h6>media strategy</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate sequi molestias, quod voluptatibus incidunt aliquid et atque deleniti.</p>
-			</div>
-
-			<!-- mobile app section -->
-			<div class="box box8 col">
-				<i class="fas fa-th"></i>
-				<h6>mobile app</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate sequi molestias, quod voluptatibus incidunt aliquid et atque deleniti.</p>
-			</div>
-
-			<!-- coding section -->
-			<div class="box box9 col">
-				<i class="fab fa-html5"></i>
-				<h6>coding</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate sequi molestias, quod voluptatibus incidunt aliquid et atque deleniti.</p>
-			</div>
-
-			<!-- grid area10 img -->
-			<div class="box box10 bg-img-box">
-
-			</div>
-
-			<!-- experience section -->
-			<div class="box box11">
-				<h2>my experiences</h2>
-				<h6>previous companies and my tasks</h6>
-				<div class="experience-details">
-					<i class="fas fa-laptop"></i>
-					<h5>graphic designer</h5><span>2014 july-2015 sep</span>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				<div class="experience-details">
-					<i class="fas fa-laptop"></i>
-					<h5>web designer</h5><span>2014 july-2015 sep</span>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-
-			<!-- box12 -->
-			<div class="box box12">				
-				<h2>my experiences</h2>
-				<h6>previous companies and my tasks</h6>
-				<div class="experience-details">
-					<i class="fas fa-laptop"></i>
-					<h5>graphic designer</h5><span>2014 july-2015 sep</span>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				<div class="experience-details">
-					<i class="fas fa-laptop"></i>
-					<h5>web designer</h5><span>2014 july-2015 sep</span>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-
-			<div class="box box13 bg-img-box">
-				
-			</div>
-			<div class="box box14">
-				<h2>say hello...</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				<form action="login">
-					<fieldset>
-						<input type="text" placeholder="your name">
-						<input type="text" placeholder="your email">
-						<textarea name="textarea" id="" cols="30" rows="10" placeholder="write your message..."></textarea>
-						<button class="btn" type="submit">send</button>
-					</fieldset>
-				</form>
-				
-			</div>
-			<div class="box box15 bg-img-box">
-				
-			</div>
-
-			<div class="box box16">
-				<h2>visit my office</h2>
-				<p>456 new street 22000, new york city, USA</p>
-				<h2>contact.</h2>
-				<div class="contact-details">
-					<i class="fas fa-phone"></i>
-					<p>01-0110-0220</p>
-				</div>
-				<div class="contact-details">
-					<i class="far fa-envelope"></i>
-					<a href="#">hello@company.co</a>
-				</div>
-				<div class="contact-details">
-					<i class="fas fa-globe-asia"></i>
-					<a href="#">company.co</a>
-				</div>
-			</div>
-			<div class="box box17">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6752.357061554738!2d76.36477582735449!3d32.19941967460084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b522c7cd8b85b%3A0x9d68653444d4c03a!2sRakkar%2C+Himachal+Pradesh!5e0!3m2!1sen!2sin!4v1546493741342" width="90%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-
-			<!-- primary footer -->
-			<footer class="box footer">
-				<small>copyright &copy; 2016 your company | design <a href="#">templatemo</a></small>
-
-				<div class="social-links">
-					<i class="fab fa-facebook-f"></i>
-					<i class="fab fa-twitter"></i>
-					<i class="fab fa-google-plus-g"></i>
-					<i class="fab fa-dribbble"></i>
-					<i class="fab fa-linkedin-in"></i>
-				</div>
-			</footer>
-		</div>
-	</main>
-</body>
+		</main>
+	</body>
 </html>

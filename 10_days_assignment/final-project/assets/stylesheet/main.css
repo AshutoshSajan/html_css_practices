@@ -69,7 +69,7 @@ table {
   *zoom: 1; }
 
 :root {
-  font-size: 10px; }
+  font-size: 12px; }
 
 body {
   font-family: 'Open Sans', sans-serif; }
@@ -90,13 +90,13 @@ h5 {
   font-size: 2rem; }
 
 h6 {
-  font-size: 1.7rem; }
+  font-size: 1.9rem; }
 
 span {
   font-weight: 600; }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #333; }
 
 a {
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   color: #333; }
 
 p {
-  line-height: 1.3; }
+  line-height: 1.5; }
 
 button {
   font-size: 1.6rem;
@@ -140,6 +140,33 @@ input, textarea, button {
   text-transform: capitalize;
   color: #333; }
 
+.header {
+  padding: 2rem 12rem;
+  background-color: transparent;
+  position: absolute;
+  width: 100%; }
+
+.nav, .nav__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  margin: 0; }
+
+.nav__link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-left: 3rem;
+  transition: all 200ms ease-in-out; }
+  .nav__link.active {
+    color: orange; }
+  .nav__link:hover {
+    color: orange; }
+
+#toggle, .label {
+  display: none; }
+
 /*============================================*/
 /*main css*/
 /*============================================*/
@@ -160,29 +187,9 @@ input, textarea, button {
     background: url("../../assets/media/home-img.jpg") 40% 50%;
     grid-area: item1;
     background-size: cover; }
-    .grid-container .box1 .nav-list {
-      display: flex;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      justify-content: space-around;
-      align-items: center;
-      line-height: 3;
-      padding: 0 2%; }
-      .grid-container .box1 .nav-list i {
-        font-size: 2rem; }
-      .grid-container .box1 .nav-list h4 {
-        margin: 0 30vw 0 7vw; }
-      .grid-container .box1 .nav-list a {
-        text-transform: uppercase; }
-      .grid-container .box1 .nav-list .active {
-        color: orange; }
-      .grid-container .box1 .nav-list a:hover {
-        color: orange; }
   .grid-container .box2 {
     grid-area: item2;
-    padding: 32vh 3rem;
+    padding: 20rem 3rem;
     background-color: rgba(255, 228, 196, 0.6); }
   .grid-container .btn {
     margin-top: 2rem;
@@ -278,7 +285,8 @@ input, textarea, button {
       background: transparent;
       font-size: 2rem;
       padding: 0.6rem 1rem;
-      width: 40vw; }
+      width: 40vw;
+      color: #fff; }
     .grid-container .box14 .btn {
       background: #fff;
       width: 15vw;
@@ -306,7 +314,8 @@ input, textarea, button {
     background-color: rgba(255, 87, 34, 0.8); }
     .grid-container .box17 iframe {
       margin-left: 50%;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.1); }
   .grid-container .footer {
     grid-area: footer;
     align-items: center;
@@ -320,21 +329,21 @@ input, textarea, button {
       .grid-container .footer small a {
         color: rgba(255, 87, 34, 0.8);
         font-size: 2.2rem; }
-    .grid-container .footer .social-links {
+    .grid-container .footer .social-links ul {
       display: flex;
-      width: 100%;
       justify-content: center;
-      padding: 3rem 0; }
-      .grid-container .footer .social-links i {
-        font-size: 3rem;
+      padding: 3rem 0;
+      margin: 3rem 0; }
+      .grid-container .footer .social-links ul i {
+        font-size: 2.3rem;
         margin: 0 3vw;
         color: #666;
         align-content: baseline;
         cursor: pointer; }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1024px) {
   :root {
-    font-size: 6px; }
+    font-size: 8px; }
 
   .grid-container {
     height: auto;
@@ -345,7 +354,8 @@ input, textarea, button {
       display: grid;
       width: 100vw;
       height: auto;
-      background-size: cover; }
+      background-size: cover;
+      padding: 7rem 6rem; }
     .grid-container .box1 .nav-list {
       justify-content: space-between; }
       .grid-container .box1 .nav-list .links a {
@@ -353,8 +363,21 @@ input, textarea, button {
       .grid-container .box1 .nav-list li h4 {
         display: inline-block;
         margin: 0; }
+      .grid-container .box1 .nav-list .menu-bar:active .links a {
+        display: block;
+        width: 40vw;
+        background-color: black; }
+      .grid-container .box1 .nav-list .menu-bar:transition {
+        display: block;
+        -webkit-transition-property: border;
+        -webkit-transition-duration: infinite;
+        -webkit-transition-timing-function: ease-in; }
+    .grid-container .box2 {
+      padding: 10rem 3rem; }
     .grid-container .box14 fieldset input, .grid-container .box14 textarea {
-      width: 60vw; }
+      width: 90%; }
+    .grid-container .box14 .btn {
+      width: 25vw; }
     .grid-container .box17 iframe {
       height: 50vw;
       width: 100%; }
@@ -364,5 +387,30 @@ input, textarea, button {
     .grid-container .footer {
       min-height: 30vh;
       width: 100%; } }
+@media all and (max-width: 768px) {
+  .header {
+    padding: 2rem 1rem; }
+
+  .label {
+    display: block; }
+    .label i {
+      font-size: 3rem; }
+
+  #toggle:checked ~ .nav__menu {
+    display: block; }
+
+  .nav__menu {
+    flex-direction: column;
+    position: absolute;
+    right: 4rem;
+    top: 3rem;
+    display: none;
+    background: #fff;
+    padding: 20px; }
+
+  .nav__link {
+    margin-left: 0;
+    margin-bottom: 3rem;
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */
